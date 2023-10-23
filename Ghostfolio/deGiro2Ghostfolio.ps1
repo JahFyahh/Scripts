@@ -1,7 +1,11 @@
-$accountId  = "037d6f03-7607-4dab-8550-1bdc3030c95e"
-$csvFile    = "C:\Users\Ingz\Downloads\Account.csv"
-$dataSource = "YAHOO"
-$writeLine  = $false
+Remove-Variable * -ErrorAction SilentlyContinue
+
+$accountId    = "037d6f03-7607-4dab-8550-1bdc3030c95e"
+$csvFile      = "D:\Workspace\vsCode\ghostFolio\Account.csv"
+$skippedCsv   = "Y:\dg2gf\skippedLines.csv"
+$exportCsv    = "Y:\dg2gf\Account_psExp.csv"
+$dataSource   = "YAHOO"
+$writeLine    = $false
 
 $import = Import-Csv $csvFile -Delimiter "," -Encoding UTF8 `
     -Header "date","time","currencyDate","product","isin","description","fx","currency","amount","col1","col2","orderId"
@@ -14,8 +18,14 @@ for($idx = 1; $idx -lt $import.Length; $idx++){
     try{
         $line = $import[$idx]
 
-        if((-not[string]::IsNullOrEmpty($line.date.ToLower())) -and $line.description -notmatch "ideal|flatex|cash sweep|withdrawalpass-through"){
+        if((-not[string]::IsNullOrEmpty($line.date.ToLower())) -and $line.description -notmatch "ideal|flatex|cash sweep|withdrawal|pass-through"){
             #$line.description
+
+            # Skip the following but add them to a list for future checks
+            if ($line.description.ToLower() -match "productwijziging|geldmarktfonds"){
+                $line | Export-Csv -Path $skippedCsv -Append -NoTypeInformation -Delimiter ";"
+                continue
+            }
 
             # default values
             $quantity = 1
@@ -23,9 +33,9 @@ for($idx = 1; $idx -lt $import.Length; $idx++){
             $date     = Get-Date -Year ($line.date -as [datetime]).Year -Month ($line.date -as [datetime]).Month -Day ($line.date -as [datetime]).Day `
                 -Hour ($line.time -as [datetime]).Hour -Minute ($line.time -as [datetime]).Minute -Second 0 -Format "yyyy-MM-ddTHH:mm:ssZ"
 
-            if ($line.amount) {$amountRecord = [float]($line.amount -replace ',', '.')}
-            if($line.product) { $comment  = "Product: " + $line.product + " - ISIN: " + $line.isin }
-            if ($line.isin) {$symbol = ((Invoke-WebRequest -UseBasicParsing -Uri "https://query1.finance.yahoo.com/v1/finance/search?q=US0605051046").Content | ConvertFrom-Json).quotes.symbol }
+            if ($line.amount) { $amountRecord = [float]($line.amount -replace ',', '.') }
+            if ($line.isin)   { $comment  = "ISIN: " + $line.isin + " - " + $line.description }
+            #if ($line.isin) {$symbol = ((Invoke-WebRequest -UseBasicParsing -Uri "https://query1.finance.yahoo.com/v1/finance/search?q=US0605051046").Content | ConvertFrom-Json).quotes.symbol }
     
             # Set dividend activity
             if ($line.description.ToLower() -match "dividend"){
@@ -38,36 +48,76 @@ for($idx = 1; $idx -lt $import.Length; $idx++){
                     $writeLine = $true
                 }
                 #if amount is negative then its tax add as fee
-                #TODO: check using ISIN to correctly match!?
                 else {
-                    $arraylist[-1].fee = $amountRecord
-                    $arraylist[-1].comment = $comment + " - dividendTax: $($line.amount)"
+                    if($arraylist[-1].symbol -eq $symbol){
+                        $arraylist[-1].fee = $amountRecord
+                        $arraylist[-1].comment = "ISIN: " + $line.isin + " - Dividend: " + " - dividendTax: $($line.amount)"
+                    }
                 }
             }
 
             # For the lines valuta credit and debit, eg. fees for converting to foreign currency
-            elseif ($line.description.ToLower() -match "valuta"){
-            
+            # Adding as unit price, the negative and positive should balance out the actual cost.
+            elseif ($line.description.ToLower() -match "valuta|courtesy|aansluitingskosten"){
+                "FEE " + $line.description
+
+                $type = "FEE"
+                $unitPrice = $amountRecord
+
+                if(-NOT$line.isin) { $comment  = $line.description }
+
+                $writeLine = $true
             }
 
             # For Buy/Sell actions
             elseif ($line.description.ToLower() -match "@"){
-            
-            }
+                #$line.description
 
-            # Account for spin-off shares which usually are free
-            elseif ($line.description.ToLower() -match "spin-off"){
-            
-            }
+                # Use regular expression to match the number in the description and convert to float
+                $numberSharesFromDescription = [regex]::Match($line.description, '([\d*\.?\,?\d*]+)').Value
+                $quantity = [double]::Parse($numberSharesFromDescription)
 
-            # Account for stock split ??
-            elseif ($line.description.ToLower() -match "stock split"){
-            
+                # Account for spin-off shares which usually are free
+                if ($line.description.ToLower() -match "spin-off"){
+                    # Set type, currently based on dutch export as there are no other traits to determine buy or sell
+                    if($line.description.ToLower() -match "koop"){ $type = 'BUY' } 
+                    elseif($line.description.ToLower() -match "verkoop") { $type = 'SELL' }
+
+                    [float]$unitPrice = 0
+                }
+
+                # Account for stock split ??
+                elseif ($line.description.ToLower() -match "stock split"){
+                    #$line.description
+                }
+
+                # Buy/Sell activities
+                else{
+                    #$line.description
+
+                    # Convert unitPrice by dividing total spend by number of shares
+                    $unitPrice = [math]::Round(([math]::Abs($amountRecord) / $quantity), 3)
+
+                    # Calculate fee by looking at the previous 2 entries
+                    if($import[$idx-1] -match "en\/of|and\/or|und\/oder|e\/o"){
+                        $fee = [float]($import[$idx-1].amount -replace ',', '.')
+
+                        if($import[$idx-2] -match "en\/of|and\/or|und\/oder|e\/o"){
+                            $fee = $fee + [float]($import[$idx-1].amount -replace ',', '.')
+                        }
+                    }
+
+                    # Set type based on amount, if negative its buy, else sell.
+                    if($amountRecord -lt 0){ $type = 'BUY' } else { $type = 'SELL' }
+                    
+                    $writeLine = $true
+                }
             }
 
             # Missed lines
             else{
-                #Write-Host "Could not proces line $($idx): $($line.description)"
+                $line | Export-Csv -Path $skippedCsv -Append -NoTypeInformation -Delimiter ";"
+                continue
             }
 
             if($writeLine){
@@ -90,7 +140,7 @@ for($idx = 1; $idx -lt $import.Length; $idx++){
                 $writeLine = $false
             }
         }
-        Clear-Variable fee, quantity, type, currency, date, symbol, comment -ErrorAction SilentlyContinue
+        Clear-Variable comment, fee, quantity, type, unitPrice, currency, date, symbol -ErrorAction SilentlyContinue
     }
     catch{
         $Error[0]
@@ -99,5 +149,6 @@ for($idx = 1; $idx -lt $import.Length; $idx++){
     }
 }
 
+Write-Host "Exporting to file" -ForegroundColor Yellow
 #$arraylist | ConvertTo-Json
-#$arraylist | Export-Csv C:\Users\Ingz\Downloads\Account_psExp.csv -NoTypeInformation -Delimiter ";"
+$arraylist | Export-Csv $exportCsv -NoTypeInformation -Delimiter ";"
