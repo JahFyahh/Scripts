@@ -1,9 +1,19 @@
 Remove-Variable * -ErrorAction SilentlyContinue
 
-$accountId    = "037d6f03-7607-4dab-8550-1bdc3030c95e"
+#Home
+$workingDir   = "C:\Users\Ingz\Dropbox\Workspaces\VSCode\Ghostfolio"
+$csvFile      = "$($workingDir)\Account1.csv"
+$skippedCsv   = "$($workingDir)\skippedLines.csv"
+$exportCsv    = "$($workingDir)\Account_psExp.csv"
+$exportJson   = "$($workingDir)\Account_psExp.json"
+#>
+<#Work
 $csvFile      = "D:\Workspace\vsCode\ghostFolio\Account.csv"
 $skippedCsv   = "Y:\dg2gf\skippedLines.csv"
 $exportCsv    = "Y:\dg2gf\Account_psExp.csv"
+#>
+
+$accountId    = "037d6f03-7607-4dab-8550-1bdc3030c95e"
 $dataSource   = "YAHOO"
 $writeLine    = $false
 
@@ -28,14 +38,15 @@ for($idx = 1; $idx -lt $import.Length; $idx++){
             }
 
             # default values
+            $fee     = 0
             $quantity = 1
             $currency = $line.currency
             $date     = Get-Date -Year ($line.date -as [datetime]).Year -Month ($line.date -as [datetime]).Month -Day ($line.date -as [datetime]).Day `
-                -Hour ($line.time -as [datetime]).Hour -Minute ($line.time -as [datetime]).Minute -Second 0 -Format "yyyy-MM-ddTHH:mm:ssZ"
+                -Hour ($line.time -as [datetime]).Hour -Minute ($line.time -as [datetime]).Minute -Second 0 -Format "yyyy-MM-ddTHH:mm:ss.000Z"
 
             if ($line.amount) { $amountRecord = [float]($line.amount -replace ',', '.') }
             if ($line.isin)   { $comment  = "ISIN: " + $line.isin + " - " + $line.description }
-            #if ($line.isin) {$symbol = ((Invoke-WebRequest -UseBasicParsing -Uri "https://query1.finance.yahoo.com/v1/finance/search?q=US0605051046").Content | ConvertFrom-Json).quotes.symbol }
+            if ($line.isin)   {$symbol = ((Invoke-WebRequest -UseBasicParsing -Uri "https://query1.finance.yahoo.com/v1/finance/search?q=$($line.isin)").Content | ConvertFrom-Json).quotes.symbol }
     
             # Set dividend activity
             if ($line.description.ToLower() -match "dividend"){
@@ -58,11 +69,13 @@ for($idx = 1; $idx -lt $import.Length; $idx++){
 
             # For the lines valuta credit and debit, eg. fees for converting to foreign currency
             # Adding as unit price, the negative and positive should balance out the actual cost.
-            elseif ($line.description.ToLower() -match "valuta|courtesy|aansluitingskosten"){
-                "FEE " + $line.description
+            elseif ($line.description.ToLower() -match "valuta|courtesy|aansluitingskosten|verrekening"){
+                #"FEE " + $line.description
 
-                $type = "FEE"
-                $unitPrice = $amountRecord
+                $type       = "FEE"
+                $unitPrice  = $amountRecord
+                $symbol     = "Fee"
+                $dataSource = "MANUAL"
 
                 if(-NOT$line.isin) { $comment  = $line.description }
 
@@ -150,5 +163,11 @@ for($idx = 1; $idx -lt $import.Length; $idx++){
 }
 
 Write-Host "Exporting to file" -ForegroundColor Yellow
-#$arraylist | ConvertTo-Json
 $arraylist | Export-Csv $exportCsv -NoTypeInformation -Delimiter ";"
+
+$jsonObject = @{
+    meta = @{ date = (Get-Date -Format "yyyy-MM-ddTHH:mm:ss.000Z"); version = "v2.14.0" }
+    activities = $arraylist
+}
+
+$jsonObject | ConvertTo-Json | Set-Content -Path $exportJson
