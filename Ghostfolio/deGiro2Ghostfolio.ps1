@@ -2,7 +2,7 @@ Remove-Variable * -ErrorAction SilentlyContinue
 
 #Home
 $workingDir   = "C:\Users\Ingz\Dropbox\Workspaces\VSCode\Ghostfolio"
-$csvFile      = "$($workingDir)\Account1.csv"
+$csvFile      = "$($workingDir)\Account.csv"
 $skippedCsv   = "$($workingDir)\skippedLines.csv"
 $exportCsv    = "$($workingDir)\Account_psExp.csv"
 $exportJson   = "$($workingDir)\Account_psExp.json"
@@ -16,6 +16,7 @@ $exportCsv    = "Y:\dg2gf\Account_psExp.csv"
 $accountId    = "037d6f03-7607-4dab-8550-1bdc3030c95e"
 $dataSource   = "YAHOO"
 $writeLine    = $false
+$skipped      = 0
 
 $import = Import-Csv $csvFile -Delimiter "," -Encoding UTF8 `
     -Header "date","time","currencyDate","product","isin","description","fx","currency","amount","col1","col2","orderId"
@@ -34,19 +35,20 @@ for($idx = 1; $idx -lt $import.Length; $idx++){
             # Skip the following but add them to a list for future checks
             if ($line.description.ToLower() -match "productwijziging|geldmarktfonds"){
                 $line | Export-Csv -Path $skippedCsv -Append -NoTypeInformation -Delimiter ";"
+                $skipped++
                 continue
             }
 
             # default values
-            $fee     = 0
+            $fee      = 0
             $quantity = 1
             $currency = $line.currency
             $date     = Get-Date -Year ($line.date -as [datetime]).Year -Month ($line.date -as [datetime]).Month -Day ($line.date -as [datetime]).Day `
                 -Hour ($line.time -as [datetime]).Hour -Minute ($line.time -as [datetime]).Minute -Second 0 -Format "yyyy-MM-ddTHH:mm:ss.000Z"
 
-            if ($line.amount) { $amountRecord = [float]($line.amount -replace ',', '.') }
+            if ($line.amount) { $amountRecord = [math]::Abs([float]($line.amount -replace ',', '.')) }
             if ($line.isin)   { $comment  = "ISIN: " + $line.isin + " - " + $line.description }
-            if ($line.isin)   {$symbol = ((Invoke-WebRequest -UseBasicParsing -Uri "https://query1.finance.yahoo.com/v1/finance/search?q=$($line.isin)").Content | ConvertFrom-Json).quotes.symbol }
+            if ($line.isin)   { $symbol = ((Invoke-WebRequest -UseBasicParsing -Uri "https://query1.finance.yahoo.com/v1/finance/search?q=$($line.isin)").Content | ConvertFrom-Json).quotes.symbol }
     
             # Set dividend activity
             if ($line.description.ToLower() -match "dividend"){
@@ -113,10 +115,10 @@ for($idx = 1; $idx -lt $import.Length; $idx++){
 
                     # Calculate fee by looking at the previous 2 entries
                     if($import[$idx-1] -match "en\/of|and\/or|und\/oder|e\/o"){
-                        $fee = [float]($import[$idx-1].amount -replace ',', '.')
+                        $fee = [math]::Abs([float]($import[$idx-1].amount -replace ',', '.')) 
 
                         if($import[$idx-2] -match "en\/of|and\/or|und\/oder|e\/o"){
-                            $fee = $fee + [float]($import[$idx-1].amount -replace ',', '.')
+                            $fee = $fee + [math]::Abs([float]($import[$idx-1].amount -replace ',', '.'))
                         }
                     }
 
@@ -130,6 +132,7 @@ for($idx = 1; $idx -lt $import.Length; $idx++){
             # Missed lines
             else{
                 $line | Export-Csv -Path $skippedCsv -Append -NoTypeInformation -Delimiter ";"
+                $skipped++
                 continue
             }
 
@@ -162,12 +165,16 @@ for($idx = 1; $idx -lt $import.Length; $idx++){
     }
 }
 
-Write-Host "Exporting to file" -ForegroundColor Yellow
-$arraylist | Export-Csv $exportCsv -NoTypeInformation -Delimiter ";"
+Write-Host -ForegroundColor Yellow "Skipped $($skipped) lines"
 
-$jsonObject = @{
-    meta = @{ date = (Get-Date -Format "yyyy-MM-ddTHH:mm:ss.000Z"); version = "v2.14.0" }
-    activities = $arraylist
+if($arraylist) {
+    Write-Host "Exporting to file" -ForegroundColor Yellow
+    $arraylist | Export-Csv $exportCsv -NoTypeInformation -Delimiter ";"
+
+    $jsonObject = @{
+        meta = @{ date = (Get-Date -Format "yyyy-MM-ddTHH:mm:ss.000Z"); version = "v2.14.0" }
+        activities = $arraylist
+    }
+
+    if($jsonObject) { $jsonObject | ConvertTo-Json | Set-Content -Path $exportJson }
 }
-
-$jsonObject | ConvertTo-Json | Set-Content -Path $exportJson
