@@ -14,7 +14,6 @@ $exportCsv    = "Y:\dg2gf\Account_psExp.csv"
 #>
 
 $accountId    = "037d6f03-7607-4dab-8550-1bdc3030c95e"
-$dataSource   = "YAHOO"
 $writeLine    = $false
 $skipped      = 0
 
@@ -28,6 +27,7 @@ $arraylist  = New-Object System.Collections.ArrayList
 for($idx = 1; $idx -lt $import.Length; $idx++){
     try{
         $line = $import[$idx]
+        $dataSource   = "YAHOO"
 
         if((-not[string]::IsNullOrEmpty($line.date.ToLower())) -and $line.description -notmatch "ideal|flatex|cash sweep|withdrawal|pass-through"){
             #$line.description
@@ -157,12 +157,11 @@ for($idx = 1; $idx -lt $import.Length; $idx++){
                 $writeLine = $false
             }
         }
-        Clear-Variable comment, fee, quantity, type, unitPrice, currency, date, symbol -ErrorAction SilentlyContinue
+        Clear-Variable dataSource, comment, fee, quantity, type, unitPrice, currency, date, symbol -ErrorAction SilentlyContinue
     }
     catch{
         $Error[0]
         $line
-        break
     }
 }
 
