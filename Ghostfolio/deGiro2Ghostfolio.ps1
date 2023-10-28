@@ -2,7 +2,7 @@ Remove-Variable * -ErrorAction SilentlyContinue
 
 #Home
 $workingDir   = "C:\Users\Ingz\Dropbox\Workspaces\VSCode\Ghostfolio"
-$csvFile      = "$($workingDir)\Account.csv"
+$csvFile      = "$($workingDir)\Account3.csv"
 $skippedCsv   = "$($workingDir)\skippedLines.csv"
 $exportCsv    = "$($workingDir)\Account_psExp.csv"
 $exportJson   = "$($workingDir)\Account_psExp.json"
@@ -46,7 +46,7 @@ for($idx = 1; $idx -lt $import.Length; $idx++){
             $date     = Get-Date -Year ($line.date -as [datetime]).Year -Month ($line.date -as [datetime]).Month -Day ($line.date -as [datetime]).Day `
                 -Hour ($line.time -as [datetime]).Hour -Minute ($line.time -as [datetime]).Minute -Second 0 -Format "yyyy-MM-ddTHH:mm:ss.000Z"
 
-            if ($line.amount) { $amountRecord = [math]::Abs([float]($line.amount -replace ',', '.')) }
+            if ($line.amount) { $amountRecord = [float]($line.amount -replace ',', '.') }
             if ($line.isin)   { $comment  = "ISIN: " + $line.isin + " - " + $line.description }
             if ($line.isin)   { $symbol = ((Invoke-WebRequest -UseBasicParsing -Uri "https://query1.finance.yahoo.com/v1/finance/search?q=$($line.isin)").Content | ConvertFrom-Json).quotes.symbol }
     
@@ -63,7 +63,7 @@ for($idx = 1; $idx -lt $import.Length; $idx++){
                 #if amount is negative then its tax add as fee
                 else {
                     if($arraylist[-1].symbol -eq $symbol){
-                        $arraylist[-1].fee = $amountRecord
+                        $arraylist[-1].fee = [math]::Abs([float]$amountRecord)
                         $arraylist[-1].comment = "ISIN: " + $line.isin + " - Dividend: " + " - dividendTax: $($line.amount)"
                     }
                 }
@@ -75,7 +75,7 @@ for($idx = 1; $idx -lt $import.Length; $idx++){
                 #"FEE " + $line.description
 
                 $type       = "FEE"
-                $unitPrice  = $amountRecord
+                $unitPrice  = [math]::Abs([float]$amountRecord)
                 $symbol     = "Fee"
                 $dataSource = "MANUAL"
 
@@ -120,6 +120,7 @@ for($idx = 1; $idx -lt $import.Length; $idx++){
                         if($import[$idx-2] -match "en\/of|and\/or|und\/oder|e\/o"){
                             $fee = $fee + [math]::Abs([float]($import[$idx-1].amount -replace ',', '.'))
                         }
+                        if($fee -lt 0) { break }
                     }
 
                     # Set type based on amount, if negative its buy, else sell.
