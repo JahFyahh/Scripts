@@ -1,2 +1,2 @@
 # Scripts
-Some Random scripts for my raspberry
+Some Random scripts I made to make life easy
