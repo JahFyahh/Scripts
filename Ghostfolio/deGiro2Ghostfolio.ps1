@@ -24,7 +24,7 @@ $import = Import-Csv $csvFile -Delimiter "," -Encoding UTF8 `
 $arraylist  = New-Object System.Collections.ArrayList
 
 # Get relevant lines
-for($idx = 1; $idx -lt $import.Length; $idx++){
+for($idx = 0; $idx -lt $import.Length; $idx++){
     try{
         $line = $import[$idx]
         $dataSource   = "YAHOO"
