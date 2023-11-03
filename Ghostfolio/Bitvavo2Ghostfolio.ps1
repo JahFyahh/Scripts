@@ -1,17 +1,11 @@
 Remove-Variable * -ErrorAction SilentlyContinue
 
 #Home
-$workingDir   = "D:\Dropbox\Workspaces\VSCode\Ghostfolio"
+$workingDir   = "$PSScriptRoot"
 $csvFile      = "$($workingDir)\cryptoSheet.csv"
 $skippedCsv   = "$($workingDir)\skippedLines_Crypto.csv"
 $exportCsv    = "$($workingDir)\crypto2Ghost.csv"
 $exportJson   = "$($workingDir)\crypto2Ghost.json"
-#>
-<#Work
-$csvFile      = "D:\Workspace\vsCode\ghostFolio\Account.csv"
-$skippedCsv   = "Y:\dg2gf\skippedLines.csv"
-$exportCsv    = "Y:\dg2gf\Account_psExp.csv"
-#>
 
 $accountId    = "d4faf223-7472-41e8-bb24-0ee72549d007"
 $writeLine    = $false
