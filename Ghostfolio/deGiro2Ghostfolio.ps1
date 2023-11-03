@@ -2,10 +2,10 @@ Remove-Variable * -ErrorAction SilentlyContinue
 
 #Home
 $workingDir   = "$PSScriptRoot"
-$csvFile      = "$($workingDir)\Account3.csv"
-$skippedCsv   = "$($workingDir)\skippedLines.csv"
-$exportCsv    = "$($workingDir)\Account_psExp.csv"
-$exportJson   = "$($workingDir)\Account_psExp.json"
+$csvFile      = "$($workingDir)\deGiroAccount.csv"
+$skippedCsv   = "$($workingDir)\deGiroSkippedLines.csv"
+$exportCsv    = "$($workingDir)\deGiroAccount_psExp.csv"
+$exportJson   = "$($workingDir)\deGiroAccount_psExp.json"
 
 $accountId    = "037d6f03-7607-4dab-8550-1bdc3030c95e"
 $writeLine    = $false
