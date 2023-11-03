@@ -2,10 +2,10 @@ Remove-Variable * -ErrorAction SilentlyContinue
 
 #Home
 $workingDir   = "$PSScriptRoot"
-$csvFile      = "$($workingDir)\cryptoSheet.csv"
-$skippedCsv   = "$($workingDir)\skippedLines_Crypto.csv"
-$exportCsv    = "$($workingDir)\crypto2Ghost.csv"
-$exportJson   = "$($workingDir)\crypto2Ghost.json"
+$csvFile      = "$($workingDir)\bitvavoCryptoSheet.csv"
+$skippedCsv   = "$($workingDir)\bitvavoSkippedLines.csv"
+$exportCsv    = "$($workingDir)\bitvavoCrypto2Ghost.csv"
+$exportJson   = "$($workingDir)\bitvavoCrypto2Ghost.json"
 
 $accountId    = "d4faf223-7472-41e8-bb24-0ee72549d007"
 $writeLine    = $false
