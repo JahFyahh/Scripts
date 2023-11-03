@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "date": "2023-11-03T23:23:56.461Z",
+    "version": "v2.17.0"
+  },
+  "accounts": [
+    {
+      "balance": 0,
+      "comment": null,
+      "currency": "EUR",
+      "id": "d4faf223-7472-41e8-bb24-0ee72549d007",
+      "isExcluded": false,
+      "name": "Bitvavo",
+      "platformId": "00042fb3-660f-4bb5-adca-3a2b5cc6f1e2"
+    },
+    {
+      "balance": 0,
+      "comment": null,
+      "currency": "USD",
+      "id": "27d9288b-9c35-4446-ab5a-0a079aeb1330",
+      "isExcluded": false,
+      "name": "Default Account",
+      "platformId": null
+    },
+    {
+      "balance": 0,
+      "comment": null,
+      "currency": "EUR",
+      "id": "0986e828-5c89-4497-8d08-445f35563bbf",
+      "isExcluded": false,
+      "name": "deGiro",
+      "platformId": "2ddf1cbe-5bfb-484d-ba75-e421de939c65"
+    }
+  ],
+  "activities": [
+    {
+      "accountId": "d4faf223-7472-41e8-bb24-0ee72549d007",
+      "comment": null,
+      "fee": 0.1324077214824254,
+      "quantity": 443.770012,
+      "type": "BUY",
+      "unitPrice": 0.119347987681852,
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2023-11-03T22:38:54.198Z",
+      "symbol": "TRXUSD"
+    },
+    {
+      "accountId": "d4faf223-7472-41e8-bb24-0ee72549d007",
+      "comment": null,
+      "fee": 0.5629594664918898,
+      "quantity": 39.7309,
+      "type": "BUY",
+      "unitPrice": 5.662275919177122,
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2023-11-03T16:47:48.225Z",
+      "symbol": "EOSUSD"
+    },
+    {
+      "accountId": "d4faf223-7472-41e8-bb24-0ee72549d007",
+      "comment": null,
+      "fee": 0.07947112577253902,
+      "quantity": 1.55515414,
+      "type": "BUY",
+      "unitPrice": 20.44069236487204,
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2023-11-03T16:47:04.437Z",
+      "symbol": "AVAXUSD"
+    },
+    {
+      "accountId": "d4faf223-7472-41e8-bb24-0ee72549d007",
+      "comment": null,
+      "fee": 0.06620388312626102,
+      "quantity": 210.657677,
+      "type": "BUY",
+      "unitPrice": 0.1257088244663906,
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2023-11-03T16:45:23.917Z",
+      "symbol": "XRPUSD"
+    },
+    {
+      "accountId": "d4faf223-7472-41e8-bb24-0ee72549d007",
+      "comment": null,
+      "fee": 0.04,
+      "quantity": 60,
+      "type": "SELL",
+      "unitPrice": 0.06777143,
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2023-11-03T16:36:33.689Z",
+      "symbol": "DOGEUSD"
+    },
+    {
+      "accountId": "d4faf223-7472-41e8-bb24-0ee72549d007",
+      "comment": null,
+      "fee": 0.5296803652968037,
+      "quantity": 0.113624103,
+      "type": "BUY",
+      "unitPrice": 1864.50037166826,
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2023-11-03T16:24:12.068Z",
+      "symbol": "ETHUSD"
+    },
+    {
+      "accountId": "d4faf223-7472-41e8-bb24-0ee72549d007",
+      "comment": null,
+      "fee": 0,
+      "quantity": 161.2903226,
+      "type": "BUY",
+      "unitPrice": 0.3291918870128491,
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2023-11-03T16:20:09.039Z",
+      "symbol": "DOGEUSD"
+    },
+    {
+      "accountId": "d4faf223-7472-41e8-bb24-0ee72549d007",
+      "comment": null,
+      "fee": 0,
+      "quantity": 0.545,
+      "type": "BUY",
+      "unitPrice": 0.32110694,
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2023-11-03T16:19:02.997Z",
+      "symbol": "ADAUSD"
+    },
+    {
+      "accountId": "d4faf223-7472-41e8-bb24-0ee72549d007",
+      "comment": null,
+      "fee": 0,
+      "quantity": 0.05472485,
+      "type": "BUY",
+      "unitPrice": 32168,
+      "currency": "USD",
+      "dataSource": "COINGECKO",
+      "date": "2023-11-03T12:54:39.598Z",
+      "symbol": "bitcoin"
+    },
+    {
+      "accountId": "d4faf223-7472-41e8-bb24-0ee72549d007",
+      "comment": "staking: Bitvavo Transaction ID: a19ce40b-7dd8-4679-8f8f-c3b00bafb303",
+      "fee": 0,
+      "quantity": 0.000115,
+      "type": "BUY",
+      "unitPrice": 0.00001056245048851334,
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2023-10-30T10:38:00.000Z",
+      "symbol": "ADAUSD"
+    },
+    {
+      "accountId": "d4faf223-7472-41e8-bb24-0ee72549d007",
+      "comment": "Deposit: Bitvavo Transaction ID: 3eee0470-4b4e-46d7-a439-d7f4e1254306",
+      "fee": 0,
+      "quantity": 156.00235,
+      "type": "BUY",
+      "unitPrice": 0.00001095158305133007,
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2023-08-06T11:22:00.000Z",
+      "symbol": "DOGEUSD"
+    }
+  ]
+}

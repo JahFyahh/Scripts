@@ -19,18 +19,42 @@ $arraylist  = New-Object System.Collections.ArrayList
 # Get relevant lines
 for($idx = 0; $idx -lt $import.Length; $idx++){
     try{
-        $line = $import[$idx]
+        $line         = $import[$idx]
+        $fee          = 0
+        $unitPrice    = 0.00001
         $dataSource   = "YAHOO"
-        $date     = Get-Date -Year ($line.date -as [datetime]).Year -Month ($line.date -as [datetime]).Month -Day ($line.date -as [datetime]).Day `
-                -Hour ($line.time -as [datetime]).Hour -Minute ($line.time -as [datetime]).Minute -Second 0 -Format "yyyy-MM-ddTHH:mm:ss.000Z"
+        $baseCurrency = 'EUR'
 
-        # exclude sta
-        if($line.Status.ToLower() -eq "completed"){
-            # Add crypto deposits and exclude cash deposits
-            if($line.Type.ToLower() -eq "deposit" -and $line.Currency.ToLower() -ne "eur"){
-                $line.Currency
+        if($line.Type.ToLower() -ne "affiliate"){
+            $symbol     = $line.Currency + 'USD'
+            $comment    = "Bitvavo Transaction ID: " + $line.'Transaction ID'
+            $quantity   = [math]::Abs([float]($line.Amount -replace ',', '.'))
+            $date       = Get-Date -Year ($line.date -as [datetime]).Year -Month ($line.date -as [datetime]).Month `
+                            -Day ($line.date -as [datetime]).Day -Hour ($line.time -as [datetime]).Hour `
+                            -Minute ($line.time -as [datetime]).Minute -Second 0 -Format "yyyy-MM-ddTHH:mm:ss.000Z"
+
+            if($line.Type.ToLower() -match "buy|sell|withdrawal"){
+                $type = $line.Type.ToUpper()
+                $fee  = [float]($line.'Fee amount' -replace ',', '.')
+                $unitPrice = [float]($line.'Price (EUR)' -replace ',', '.')
+                $currency = $line.'Fee currency'
+
+                if($line.Type.ToLower() -eq "withdrawal"){
+                    $type = 'SELL'
+                    $unitPrice = 0.00001
+                }
+                
+                $writeLine = $true
             }
-        
+
+            # Add crypto deposits and exclude cash deposits
+            elseif($line.Type.ToLower() -match "deposit|staking" -and $line.Currency.ToLower() -ne "eur"){
+                $type = 'BUY'
+                $currency = $baseCurrency
+                $comment  = $line.Type + ": " + $comment
+
+                $writeLine = $true
+            }
         }
 
         if($writeLine){
@@ -51,6 +75,7 @@ for($idx = 0; $idx -lt $import.Length; $idx++){
             ) | Out-Null
 
             $writeLine = $false
+            #break
         }
 
         Clear-Variable dataSource, comment, fee, quantity, type, unitPrice, currency, date, symbol -ErrorAction SilentlyContinue
