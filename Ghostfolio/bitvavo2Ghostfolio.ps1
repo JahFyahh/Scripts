@@ -57,6 +57,12 @@ for($idx = 0; $idx -lt $import.Length; $idx++){
             }
         }
 
+        else{
+            $line | Export-Csv -Path $skippedCsv -Append -NoTypeInformation -Delimiter ";"
+            $skipped++
+            continue
+        }
+
         if($writeLine){
             # Add object to Arraylist
             $arraylist.Add(
@@ -81,6 +87,7 @@ for($idx = 0; $idx -lt $import.Length; $idx++){
         Clear-Variable dataSource, comment, fee, quantity, type, unitPrice, currency, date, symbol -ErrorAction SilentlyContinue
     }
     catch{
+        $line | Export-Csv -Path $skippedCsv -Append -NoTypeInformation -Delimiter ";"
         $Error[0]
         $line
     }

@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "date": "2023-11-03T23:23:56.461Z",
+    "version": "v2.17.0"
+  },
+  "accounts": [
+    {
+      "balance": 0,
+      "comment": null,
+      "currency": "EUR",
+      "id": "d4faf223-7472-41e8-bb24-0ee72549d007",
+      "isExcluded": false,
+      "name": "Bitvavo",
+      "platformId": "00042fb3-660f-4bb5-adca-3a2b5cc6f1e2"
+    },
+    {
+      "balance": 0,
+      "comment": null,
+      "currency": "USD",
+      "id": "27d9288b-9c35-4446-ab5a-0a079aeb1330",
+      "isExcluded": false,
+      "name": "Default Account",
+      "platformId": null
+    },
+    {
+      "balance": 0,
+      "comment": null,
+      "currency": "EUR",
+      "id": "0986e828-5c89-4497-8d08-445f35563bbf",
+      "isExcluded": false,
+      "name": "deGiro",
+      "platformId": "2ddf1cbe-5bfb-484d-ba75-e421de939c65"
+    }
+  ],
+  "activities": [
+    {
+      "accountId": "d4faf223-7472-41e8-bb24-0ee72549d007",
+      "comment": "Deposit: Bitvavo Transaction ID: 3eee0470-4b4e-46d7-a439-d7f4e1254306",
+      "fee": 0,
+      "quantity": 156.00235,
+      "type": "BUY",
+      "unitPrice": 0.00001095158305133007,
+      "currency": "USD",
+      "dataSource": "YAHOO",
+      "date": "2023-08-06T11:22:00.000Z",
+      "symbol": "DOGEUSD",
+	  "tag": "cryptoStaking"
+    }
+  ]
+}
