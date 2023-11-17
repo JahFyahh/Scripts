@@ -1,9 +1,141 @@
 {
     "meta":  {
                  "version":  "v2.14.0",
-                 "date":  "2023-11-04T00:33:25.000Z"
+                 "date":  "2023-11-17T17:12:41.000Z"
              },
     "activities":  [
+                       {
+                           "accountId":  "d4faf223-7472-41e8-bb24-0ee72549d007",
+                           "comment":  "staking: Bitvavo Transaction ID: 5265e16f-a750-404c-b278-8fe98d479470",
+                           "fee":  0,
+                           "quantity":  2.2E-06,
+                           "type":  "BUY",
+                           "unitPrice":  1E-05,
+                           "currency":  "EUR",
+                           "dataSource":  "YAHOO",
+                           "date":  "2023-11-13T11:27:00.000Z",
+                           "symbol":  "BTCUSD"
+                       },
+                       {
+                           "accountId":  "d4faf223-7472-41e8-bb24-0ee72549d007",
+                           "comment":  "staking: Bitvavo Transaction ID: 3169ab5c-ef4c-4002-86d3-c658115f5639",
+                           "fee":  0,
+                           "quantity":  0.0001963,
+                           "type":  "BUY",
+                           "unitPrice":  1E-05,
+                           "currency":  "EUR",
+                           "dataSource":  "YAHOO",
+                           "date":  "2023-11-13T11:27:00.000Z",
+                           "symbol":  "ETHUSD"
+                       },
+                       {
+                           "accountId":  "d4faf223-7472-41e8-bb24-0ee72549d007",
+                           "comment":  "staking: Bitvavo Transaction ID: a99e0db6-b93e-44bb-b841-431b5e309b02",
+                           "fee":  0,
+                           "quantity":  0.027861,
+                           "type":  "BUY",
+                           "unitPrice":  1E-05,
+                           "currency":  "EUR",
+                           "dataSource":  "YAHOO",
+                           "date":  "2023-11-13T11:27:00.000Z",
+                           "symbol":  "TRXUSD"
+                       },
+                       {
+                           "accountId":  "d4faf223-7472-41e8-bb24-0ee72549d007",
+                           "comment":  "staking: Bitvavo Transaction ID: cd063784-3835-416f-ab09-8e203e9b5678",
+                           "fee":  0,
+                           "quantity":  9E-05,
+                           "type":  "BUY",
+                           "unitPrice":  1E-05,
+                           "currency":  "EUR",
+                           "dataSource":  "YAHOO",
+                           "date":  "2023-11-13T11:26:00.000Z",
+                           "symbol":  "ADAUSD"
+                       },
+                       {
+                           "accountId":  "d4faf223-7472-41e8-bb24-0ee72549d007",
+                           "comment":  "staking: Bitvavo Transaction ID: 915b0f8e-6ee0-459e-a8b4-59d7ec0028d1",
+                           "fee":  0,
+                           "quantity":  0.00256316,
+                           "type":  "BUY",
+                           "unitPrice":  1E-05,
+                           "currency":  "EUR",
+                           "dataSource":  "YAHOO",
+                           "date":  "2023-11-13T11:26:00.000Z",
+                           "symbol":  "DOGEUSD"
+                       },
+                       {
+                           "accountId":  "d4faf223-7472-41e8-bb24-0ee72549d007",
+                           "comment":  "staking: Bitvavo Transaction ID: 70e53c27-00af-4cb7-91cb-ce7d1a248604",
+                           "fee":  0,
+                           "quantity":  0.00027158,
+                           "type":  "BUY",
+                           "unitPrice":  1E-05,
+                           "currency":  "EUR",
+                           "dataSource":  "YAHOO",
+                           "date":  "2023-11-13T11:26:00.000Z",
+                           "symbol":  "MANAUSD"
+                       },
+                       {
+                           "accountId":  "d4faf223-7472-41e8-bb24-0ee72549d007",
+                           "comment":  "staking: Bitvavo Transaction ID: d49bca2e-88fd-49ca-8083-ae1e1618780d",
+                           "fee":  0,
+                           "quantity":  0.0308991,
+                           "type":  "BUY",
+                           "unitPrice":  1E-05,
+                           "currency":  "EUR",
+                           "dataSource":  "YAHOO",
+                           "date":  "2023-11-13T11:26:00.000Z",
+                           "symbol":  "XLMUSD"
+                       },
+                       {
+                           "accountId":  "d4faf223-7472-41e8-bb24-0ee72549d007",
+                           "comment":  "staking: Bitvavo Transaction ID: a02cbf80-3720-471f-b405-6f8ba6ff8b65",
+                           "fee":  0,
+                           "quantity":  0.000115,
+                           "type":  "BUY",
+                           "unitPrice":  1E-05,
+                           "currency":  "EUR",
+                           "dataSource":  "YAHOO",
+                           "date":  "2023-11-06T10:02:00.000Z",
+                           "symbol":  "ADAUSD"
+                       },
+                       {
+                           "accountId":  "d4faf223-7472-41e8-bb24-0ee72549d007",
+                           "comment":  "staking: Bitvavo Transaction ID: 2c4dd631-f1be-4238-a1cf-5fc616d433b0",
+                           "fee":  0,
+                           "quantity":  5.33E-06,
+                           "type":  "BUY",
+                           "unitPrice":  1E-05,
+                           "currency":  "EUR",
+                           "dataSource":  "YAHOO",
+                           "date":  "2023-11-06T10:02:00.000Z",
+                           "symbol":  "BTCUSD"
+                       },
+                       {
+                           "accountId":  "d4faf223-7472-41e8-bb24-0ee72549d007",
+                           "comment":  "staking: Bitvavo Transaction ID: 597c4aa5-c544-43c5-a59f-8964cc87adec",
+                           "fee":  0,
+                           "quantity":  0.00019626,
+                           "type":  "BUY",
+                           "unitPrice":  1E-05,
+                           "currency":  "EUR",
+                           "dataSource":  "YAHOO",
+                           "date":  "2023-11-06T10:02:00.000Z",
+                           "symbol":  "ETHUSD"
+                       },
+                       {
+                           "accountId":  "d4faf223-7472-41e8-bb24-0ee72549d007",
+                           "comment":  "staking: Bitvavo Transaction ID: af2656b3-149a-44c4-b13b-1543c5d54112",
+                           "fee":  0,
+                           "quantity":  0.195006,
+                           "type":  "BUY",
+                           "unitPrice":  1E-05,
+                           "currency":  "EUR",
+                           "dataSource":  "YAHOO",
+                           "date":  "2023-11-06T10:02:00.000Z",
+                           "symbol":  "TRXUSD"
+                       },
                        {
                            "accountId":  "d4faf223-7472-41e8-bb24-0ee72549d007",
                            "comment":  "staking: Bitvavo Transaction ID: a19ce40b-7dd8-4679-8f8f-c3b00bafb303",
@@ -2883,18 +3015,6 @@
                            "dataSource":  "YAHOO",
                            "date":  "2022-09-19T13:47:00.000Z",
                            "symbol":  "ADAUSD"
-                       },
-                       {
-                           "accountId":  "d4faf223-7472-41e8-bb24-0ee72549d007",
-                           "comment":  "Bitvavo Transaction ID: 9040e4f2-0f5c-4709-921e-9c2df5152ba0",
-                           "fee":  0,
-                           "quantity":  50,
-                           "type":  "SELL",
-                           "unitPrice":  1E-05,
-                           "currency":  "EUR",
-                           "dataSource":  "YAHOO",
-                           "date":  "2022-09-14T18:41:00.000Z",
-                           "symbol":  "EURUSD"
                        },
                        {
                            "accountId":  "d4faf223-7472-41e8-bb24-0ee72549d007",

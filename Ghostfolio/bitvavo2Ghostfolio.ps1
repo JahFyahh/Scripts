@@ -33,15 +33,14 @@ for($idx = 0; $idx -lt $import.Length; $idx++){
                             -Day ($line.date -as [datetime]).Day -Hour ($line.time -as [datetime]).Hour `
                             -Minute ($line.time -as [datetime]).Minute -Second 0 -Format "yyyy-MM-ddTHH:mm:ss.000Z"
 
-            if($line.Type.ToLower() -match "buy|sell|withdrawal"){
+            if($line.Type.ToLower() -match "buy|sell|withdrawal" -and $line.Currency.ToLower() -notmatch "eur"){
                 $type = $line.Type.ToUpper()
-                $fee  = [float]($line.'Fee amount' -replace ',', '.')
-                $unitPrice = [float]($line.'Price (EUR)' -replace ',', '.')
                 $currency = $line.'Fee currency'
+                $fee  = [float]($line.'Fee amount' -replace ',', '.')
+                if($line.'Price (EUR)'){ $unitPrice = [float]($line.'Price (EUR)' -replace ',', '.') }
 
                 if($line.Type.ToLower() -eq "withdrawal"){
                     $type = 'SELL'
-                    $unitPrice = 0.00001
                 }
                 
                 $writeLine = $true
