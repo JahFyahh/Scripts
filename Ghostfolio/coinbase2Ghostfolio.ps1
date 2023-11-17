@@ -38,12 +38,12 @@ for($idx = 0; $idx -lt $import.Length; $idx++){
             $writeLine = $true
         }
 
-        if($line.'Transaction Type'.ToLower() -match "sell|send"){
+        elseif($line.'Transaction Type'.ToLower() -match "sell|send"){
             $type = 'SELL'
             $writeLine = $true
         }
 
-        if($line.'Transaction Type'.ToLower() -match "convert"){
+        elseif($line.'Transaction Type'.ToLower() -match "convert"){
             $fromQuantity = [float]($line.Notes.split(" ")[1] -replace ',', '.') 
             $fromSymbol   = $line.Notes.split(" ")[2] + "USD"
             $toQuantity   = [float]($line.Notes.split(" ")[4] -replace ',', '.') 
@@ -79,10 +79,13 @@ for($idx = 0; $idx -lt $import.Length; $idx++){
                 }
             ) | Out-Null
 
-
-
-
             $writeLine = $false
+        }
+
+        else{
+            $line | Export-Csv -Path $skippedCsv -Append -NoTypeInformation -Delimiter ";"
+            $skipped++
+            continue
         }
 
         if($writeLine){
