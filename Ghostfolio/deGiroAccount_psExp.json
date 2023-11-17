@@ -1,11 +1,11 @@
 {
     "meta":  {
                  "version":  "v2.14.0",
-                 "date":  "2023-11-17T21:00:18.000Z"
+                 "date":  "2023-11-17T21:24:09.000Z"
              },
     "activities":  [
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: IE00B3RBWM25 - Koop 1 @ 99,44 EUR",
                            "fee":  1,
                            "quantity":  1,
@@ -17,7 +17,7 @@
                            "symbol":  "VWRD.L"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -29,7 +29,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -41,7 +41,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US7561091049 - Dividend:  - dividendTax: -0.04",
                            "fee":  0.04,
                            "quantity":  1,
@@ -53,7 +53,7 @@
                            "symbol":  "O"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -65,7 +65,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -77,7 +77,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US58463J3041 - Dividend:  - dividendTax: -0.38",
                            "fee":  0.38,
                            "quantity":  1,
@@ -89,7 +89,7 @@
                            "symbol":  "MPW"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -101,7 +101,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -113,7 +113,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US02209S1033 - Dividend:  - dividendTax: -0.29",
                            "fee":  0.29,
                            "quantity":  1,
@@ -125,7 +125,7 @@
                            "symbol":  "MO"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -137,7 +137,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -149,7 +149,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US0605051046 - Dividend:  - dividendTax: -0.07",
                            "fee":  0.07,
                            "quantity":  1,
@@ -161,7 +161,7 @@
                            "symbol":  "BAC"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -173,7 +173,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -185,7 +185,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: IE00B3RBWM25 - Dividend",
                            "fee":  0,
                            "quantity":  1,
@@ -197,7 +197,7 @@
                            "symbol":  "VWRD.L"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -209,7 +209,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -221,7 +221,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US7561091049 - Dividend:  - dividendTax: -0.04",
                            "fee":  0.04,
                            "quantity":  1,
@@ -233,7 +233,7 @@
                            "symbol":  "O"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011540547 - Dividend:  - dividendTax: -0.74",
                            "fee":  0.74,
                            "quantity":  1,
@@ -245,7 +245,7 @@
                            "symbol":  "ABN.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011794037 - Dividend:  - dividendTax: -0.15",
                            "fee":  0.15,
                            "quantity":  1,
@@ -257,7 +257,7 @@
                            "symbol":  "AD.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: IE00B3RBWM25 - Koop 2 @ 100,8 EUR",
                            "fee":  1,
                            "quantity":  2,
@@ -269,7 +269,7 @@
                            "symbol":  "VWRD.L"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US58463J3041 - Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -281,7 +281,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US58463J3041 - Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -293,7 +293,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US58463J3041 - Koop 5 @ 7,4998 USD",
                            "fee":  2,
                            "quantity":  5,
@@ -305,7 +305,7 @@
                            "symbol":  "MPW"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -317,7 +317,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -329,7 +329,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -341,7 +341,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -353,7 +353,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US7561091049 - Dividend:  - dividendTax: -0.04",
                            "fee":  0.04,
                            "quantity":  1,
@@ -365,7 +365,7 @@
                            "symbol":  "O"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US6826801036 - Dividend:  - dividendTax: -0.14",
                            "fee":  0.14,
                            "quantity":  1,
@@ -377,7 +377,7 @@
                            "symbol":  "OKE"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011821202 - Dividend:  - dividendTax: -0.05",
                            "fee":  0.05,
                            "quantity":  1,
@@ -389,7 +389,7 @@
                            "symbol":  "INGA.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -401,7 +401,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -413,7 +413,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0000009082 - Dividend:  - dividendTax: -0.08",
                            "fee":  0.08,
                            "quantity":  1,
@@ -425,7 +425,7 @@
                            "symbol":  "KPN.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US92343V1044 - Dividend:  - dividendTax: -0.20",
                            "fee":  0.2,
                            "quantity":  1,
@@ -437,7 +437,7 @@
                            "symbol":  "VZ"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Dividend:  - dividendTax: -0.37",
                            "fee":  0.37,
                            "quantity":  1,
@@ -449,7 +449,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -461,7 +461,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -473,7 +473,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US7561091049 - Dividend:  - dividendTax: -0.04",
                            "fee":  0.04,
                            "quantity":  1,
@@ -485,7 +485,7 @@
                            "symbol":  "O"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -497,7 +497,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -509,7 +509,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US58463J3041 - Dividend:  - dividendTax: -0.52",
                            "fee":  0.52,
                            "quantity":  1,
@@ -521,7 +521,7 @@
                            "symbol":  "MPW"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -533,7 +533,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -545,7 +545,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US02209S1033 - Dividend:  - dividendTax: -0.28",
                            "fee":  0.28,
                            "quantity":  1,
@@ -557,7 +557,7 @@
                            "symbol":  "MO"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -569,7 +569,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -581,7 +581,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US0605051046 - Dividend:  - dividendTax: -0.07",
                            "fee":  0.07,
                            "quantity":  1,
@@ -593,7 +593,7 @@
                            "symbol":  "BAC"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -605,7 +605,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -617,7 +617,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: IE00B3RBWM25 - Dividend",
                            "fee":  0,
                            "quantity":  1,
@@ -629,7 +629,7 @@
                            "symbol":  "VWRD.L"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -641,7 +641,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -653,7 +653,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US7561091049 - Dividend:  - dividendTax: -0.04",
                            "fee":  0.04,
                            "quantity":  1,
@@ -665,7 +665,7 @@
                            "symbol":  "O"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011540547 - Dividend:  - dividendTax: -0.80",
                            "fee":  0.8,
                            "quantity":  1,
@@ -677,7 +677,7 @@
                            "symbol":  "ABN.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -689,7 +689,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -701,7 +701,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US6826801036 - Dividend:  - dividendTax: -0.14",
                            "fee":  0.14,
                            "quantity":  1,
@@ -713,7 +713,7 @@
                            "symbol":  "OKE"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US7561091049 - Dividend:  - dividendTax: -0.04",
                            "fee":  0.04,
                            "quantity":  1,
@@ -725,7 +725,7 @@
                            "symbol":  "O"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: IE00B3RBWM25 - Koop 1 @ 98,74 EUR",
                            "fee":  1,
                            "quantity":  1,
@@ -737,7 +737,7 @@
                            "symbol":  "VWRD.L"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011821202 - Dividend:  - dividendTax: -0.06",
                            "fee":  0.06,
                            "quantity":  1,
@@ -749,7 +749,7 @@
                            "symbol":  "INGA.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -761,7 +761,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -773,7 +773,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Dividend:  - dividendTax: -0.37",
                            "fee":  0.37,
                            "quantity":  1,
@@ -785,7 +785,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -797,7 +797,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -809,7 +809,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US92343V1044 - Dividend:  - dividendTax: -0.20",
                            "fee":  0.2,
                            "quantity":  1,
@@ -821,7 +821,7 @@
                            "symbol":  "VZ"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US02209S1033 - Dividend:  - dividendTax: -0.28",
                            "fee":  0.28,
                            "quantity":  1,
@@ -833,7 +833,7 @@
                            "symbol":  "MO"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011794037 - Dividend:  - dividendTax: -0.18",
                            "fee":  0.18,
                            "quantity":  1,
@@ -845,7 +845,7 @@
                            "symbol":  "AD.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0000009082 - Dividend:  - dividendTax: -0.14",
                            "fee":  0.14,
                            "quantity":  1,
@@ -857,7 +857,7 @@
                            "symbol":  "KPN.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -869,7 +869,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -881,7 +881,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US7561091049 - Dividend:  - dividendTax: -0.04",
                            "fee":  0.04,
                            "quantity":  1,
@@ -893,7 +893,7 @@
                            "symbol":  "O"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -905,7 +905,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -917,7 +917,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US58463J3041 - Dividend:  - dividendTax: -0.52",
                            "fee":  0.52,
                            "quantity":  1,
@@ -929,7 +929,7 @@
                            "symbol":  "MPW"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2023 (New York Stock Exchange - NSY)",
                            "fee":  0,
                            "quantity":  1,
@@ -941,7 +941,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2023 (NASDAQ - NDQ)",
                            "fee":  0,
                            "quantity":  1,
@@ -953,7 +953,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2023 (Tradegate AG - TDG)",
                            "fee":  0,
                            "quantity":  1,
@@ -965,7 +965,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2023 (Borse Frankfurt - FRA)",
                            "fee":  0,
                            "quantity":  1,
@@ -977,7 +977,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -989,7 +989,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -1001,7 +1001,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: IE00B3RBWM25 - Koop 1 @ 97,93 EUR",
                            "fee":  0,
                            "quantity":  1,
@@ -1013,7 +1013,7 @@
                            "symbol":  "VWRD.L"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US0605051046 - Dividend:  - dividendTax: -0.07",
                            "fee":  0.07,
                            "quantity":  1,
@@ -1025,7 +1025,7 @@
                            "symbol":  "BAC"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO courtesy",
                            "fee":  0,
                            "quantity":  1,
@@ -1037,7 +1037,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -1049,7 +1049,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -1061,7 +1061,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US7561091049 - Dividend:  - dividendTax: -0.04",
                            "fee":  0.04,
                            "quantity":  1,
@@ -1073,7 +1073,7 @@
                            "symbol":  "O"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US58463J3041 - Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -1085,7 +1085,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US58463J3041 - Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -1097,7 +1097,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US58463J3041 - Koop 5 @ 8,66 USD",
                            "fee":  1,
                            "quantity":  5,
@@ -1109,7 +1109,7 @@
                            "symbol":  "MPW"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011540547 - Koop 3 @ 15,985 EUR",
                            "fee":  3,
                            "quantity":  3,
@@ -1121,7 +1121,7 @@
                            "symbol":  "ABN.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0000009082 - Koop 10 @ 3,237 EUR",
                            "fee":  3,
                            "quantity":  10,
@@ -1133,7 +1133,7 @@
                            "symbol":  "KPN.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -1145,7 +1145,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -1157,7 +1157,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: MHY1146L1258 - Verrekening van Aandelen",
                            "fee":  0,
                            "quantity":  1,
@@ -1169,7 +1169,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2023 (New York Stock Exchange - NSY)",
                            "fee":  0,
                            "quantity":  1,
@@ -1181,7 +1181,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2023 (NASDAQ - NDQ)",
                            "fee":  0,
                            "quantity":  1,
@@ -1193,7 +1193,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2023 (Tradegate AG - TDG)",
                            "fee":  0,
                            "quantity":  1,
@@ -1205,7 +1205,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2023 (Borse Frankfurt - FRA)",
                            "fee":  0,
                            "quantity":  1,
@@ -1217,7 +1217,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -1229,7 +1229,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -1241,7 +1241,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -1253,7 +1253,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -1265,7 +1265,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US7561091049 - Dividend:  - dividendTax: -0.04",
                            "fee":  0.04,
                            "quantity":  1,
@@ -1277,7 +1277,7 @@
                            "symbol":  "O"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US6826801036 - Dividend:  - dividendTax: -0.14",
                            "fee":  0.14,
                            "quantity":  1,
@@ -1289,7 +1289,7 @@
                            "symbol":  "OKE"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -1301,7 +1301,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -1313,7 +1313,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Dividend:  - dividendTax: -0.37",
                            "fee":  0.37,
                            "quantity":  1,
@@ -1325,7 +1325,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US92343V1044 - Dividend:  - dividendTax: -0.20",
                            "fee":  0.2,
                            "quantity":  1,
@@ -1337,7 +1337,7 @@
                            "symbol":  "VZ"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2023 (New York Stock Exchange - NSY)",
                            "fee":  0,
                            "quantity":  1,
@@ -1349,7 +1349,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2023 (NASDAQ - NDQ)",
                            "fee":  0,
                            "quantity":  1,
@@ -1361,7 +1361,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2023 (Borse Frankfurt - FRA)",
                            "fee":  0,
                            "quantity":  1,
@@ -1373,7 +1373,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -1385,7 +1385,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -1397,7 +1397,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011821202 - Dividend:  - dividendTax: -0.01",
                            "fee":  0.01,
                            "quantity":  1,
@@ -1409,7 +1409,7 @@
                            "symbol":  "INGA.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US7561091049 - Dividend:  - dividendTax: -0.04",
                            "fee":  0.04,
                            "quantity":  1,
@@ -1421,7 +1421,7 @@
                            "symbol":  "O"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -1433,7 +1433,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -1445,7 +1445,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US58463J3041 - Dividend:  - dividendTax: -0.30",
                            "fee":  0.3,
                            "quantity":  1,
@@ -1457,7 +1457,7 @@
                            "symbol":  "MPW"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -1469,7 +1469,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -1481,7 +1481,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US02209S1033 - Dividend:  - dividendTax: -0.28",
                            "fee":  0.28,
                            "quantity":  1,
@@ -1493,7 +1493,7 @@
                            "symbol":  "MO"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2023 (New York Stock Exchange - NSY)",
                            "fee":  0,
                            "quantity":  1,
@@ -1505,7 +1505,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2023 (NASDAQ - NDQ)",
                            "fee":  0,
                            "quantity":  1,
@@ -1517,7 +1517,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2023 (Borse Frankfurt - FRA)",
                            "fee":  0,
                            "quantity":  1,
@@ -1529,7 +1529,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -1541,7 +1541,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -1553,7 +1553,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US0605051046 - Dividend:  - dividendTax: -0.07",
                            "fee":  0.07,
                            "quantity":  1,
@@ -1565,7 +1565,7 @@
                            "symbol":  "BAC"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -1577,7 +1577,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -1589,7 +1589,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US7561091049 - Dividend:  - dividendTax: -0.04",
                            "fee":  0.04,
                            "quantity":  1,
@@ -1601,7 +1601,7 @@
                            "symbol":  "O"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US58463J3041 - Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -1613,7 +1613,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US58463J3041 - Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -1625,7 +1625,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US58463J3041 - Koop 3 @ 12,6753 USD",
                            "fee":  1,
                            "quantity":  3,
@@ -1637,7 +1637,7 @@
                            "symbol":  "MPW"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -1649,7 +1649,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -1661,7 +1661,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -1673,7 +1673,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -1685,7 +1685,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US7561091049 - Dividend:  - dividendTax: -0.04",
                            "fee":  0.04,
                            "quantity":  1,
@@ -1697,7 +1697,7 @@
                            "symbol":  "O"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US6826801036 - Dividend:  - dividendTax: -0.14",
                            "fee":  0.14,
                            "quantity":  1,
@@ -1709,7 +1709,7 @@
                            "symbol":  "OKE"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -1721,7 +1721,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -1733,7 +1733,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US92343V1044 - Dividend:  - dividendTax: -0.20",
                            "fee":  0.2,
                            "quantity":  1,
@@ -1745,7 +1745,7 @@
                            "symbol":  "VZ"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Dividend:  - dividendTax: -0.37",
                            "fee":  0.37,
                            "quantity":  1,
@@ -1757,7 +1757,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -1769,7 +1769,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -1781,7 +1781,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US7561091049 - Dividend:  - dividendTax: -0.04",
                            "fee":  0.04,
                            "quantity":  1,
@@ -1793,7 +1793,7 @@
                            "symbol":  "O"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -1805,7 +1805,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -1817,7 +1817,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US58463J3041 - Dividend:  - dividendTax: -0.17",
                            "fee":  0.17,
                            "quantity":  1,
@@ -1829,7 +1829,7 @@
                            "symbol":  "MPW"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -1841,7 +1841,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -1853,7 +1853,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US02209S1033 - Dividend:  - dividendTax: -0.28",
                            "fee":  0.28,
                            "quantity":  1,
@@ -1865,7 +1865,7 @@
                            "symbol":  "MO"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -1877,7 +1877,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -1889,7 +1889,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2022 (New York Stock Exchange - NSY)",
                            "fee":  0,
                            "quantity":  1,
@@ -1901,7 +1901,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2022 (NASDAQ - NDQ)",
                            "fee":  0,
                            "quantity":  1,
@@ -1913,7 +1913,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2022 (Borse Frankfurt - FRA)",
                            "fee":  0,
                            "quantity":  1,
@@ -1925,7 +1925,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US0605051046 - Dividend:  - dividendTax: -0.07",
                            "fee":  0.07,
                            "quantity":  1,
@@ -1937,7 +1937,7 @@
                            "symbol":  "BAC"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011540547 - Dividend:  - dividendTax: -0.24",
                            "fee":  0.24,
                            "quantity":  1,
@@ -1949,7 +1949,7 @@
                            "symbol":  "ABN.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US7561091049 - Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -1961,7 +1961,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US7561091049 - Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -1973,7 +1973,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US7561091049 - Koop 1 @ 66,4 USD",
                            "fee":  1,
                            "quantity":  1,
@@ -1985,7 +1985,7 @@
                            "symbol":  "O"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011794037 - Dividend:  - dividendTax: -0.14",
                            "fee":  0.14,
                            "quantity":  1,
@@ -1997,7 +1997,7 @@
                            "symbol":  "AD.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US58463J3041 - Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -2009,7 +2009,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US58463J3041 - Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -2021,7 +2021,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US58463J3041 - Koop 4 @ 15,3 USD",
                            "fee":  0.5,
                            "quantity":  4,
@@ -2033,7 +2033,7 @@
                            "symbol":  "MPW"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -2045,7 +2045,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -2057,7 +2057,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US6826801036 - Dividend:  - dividendTax: -0.14",
                            "fee":  0.14,
                            "quantity":  1,
@@ -2069,7 +2069,7 @@
                            "symbol":  "OKE"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011821202 - Dividend:  - dividendTax: -0.03",
                            "fee":  0.03,
                            "quantity":  1,
@@ -2081,7 +2081,7 @@
                            "symbol":  "INGA.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -2093,7 +2093,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -2105,7 +2105,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Dividend:  - dividendTax: -0.37",
                            "fee":  0.37,
                            "quantity":  1,
@@ -2117,7 +2117,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US92343V1044 - Dividend:  - dividendTax: -0.19",
                            "fee":  0.19,
                            "quantity":  1,
@@ -2129,7 +2129,7 @@
                            "symbol":  "VZ"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -2141,7 +2141,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -2153,7 +2153,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US02209S1033 - Dividend:  - dividendTax: -0.27",
                            "fee":  0.27,
                            "quantity":  1,
@@ -2165,7 +2165,7 @@
                            "symbol":  "MO"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -2177,7 +2177,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -2189,7 +2189,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US0605051046 - Dividend:  - dividendTax: -0.06",
                            "fee":  0.06,
                            "quantity":  1,
@@ -2201,7 +2201,7 @@
                            "symbol":  "BAC"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011540547 - Dividend:  - dividendTax: -0.46",
                            "fee":  0.46,
                            "quantity":  1,
@@ -2213,7 +2213,7 @@
                            "symbol":  "ABN.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011821202 - Dividend:  - dividendTax: -0.03",
                            "fee":  0.03,
                            "quantity":  1,
@@ -2225,7 +2225,7 @@
                            "symbol":  "INGA.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -2237,7 +2237,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -2249,7 +2249,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US6826801036 - Dividend:  - dividendTax: -0.14",
                            "fee":  0.14,
                            "quantity":  1,
@@ -2261,7 +2261,7 @@
                            "symbol":  "OKE"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011821202 - Dividend:  - dividendTax: -0.06",
                            "fee":  0.06,
                            "quantity":  1,
@@ -2273,7 +2273,7 @@
                            "symbol":  "INGA.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -2285,7 +2285,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -2297,7 +2297,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Dividend:  - dividendTax: -0.37",
                            "fee":  0.37,
                            "quantity":  1,
@@ -2309,7 +2309,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US92343V1044 - Dividend:  - dividendTax: -0.19",
                            "fee":  0.19,
                            "quantity":  1,
@@ -2321,7 +2321,7 @@
                            "symbol":  "VZ"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -2333,7 +2333,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -2345,7 +2345,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US02209S1033 - Dividend:  - dividendTax: -0.27",
                            "fee":  0.27,
                            "quantity":  1,
@@ -2357,7 +2357,7 @@
                            "symbol":  "MO"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011794037 - Dividend:  - dividendTax: -0.16",
                            "fee":  0.16,
                            "quantity":  1,
@@ -2369,7 +2369,7 @@
                            "symbol":  "AD.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -2381,7 +2381,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -2393,7 +2393,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Verrekening van Aandelen",
                            "fee":  0,
                            "quantity":  1,
@@ -2405,7 +2405,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -2417,7 +2417,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -2429,7 +2429,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Verrekening van Aandelen",
                            "fee":  0,
                            "quantity":  1,
@@ -2441,7 +2441,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -2453,7 +2453,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -2465,7 +2465,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Verrekening van Aandelen",
                            "fee":  0,
                            "quantity":  1,
@@ -2477,7 +2477,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -2489,7 +2489,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -2501,7 +2501,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US0605051046 - Dividend:  - dividendTax: -0.06",
                            "fee":  0.06,
                            "quantity":  1,
@@ -2513,7 +2513,7 @@
                            "symbol":  "BAC"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -2525,7 +2525,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -2537,7 +2537,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US6826801036 - Dividend:  - dividendTax: -0.14",
                            "fee":  0.14,
                            "quantity":  1,
@@ -2549,7 +2549,7 @@
                            "symbol":  "OKE"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2022 (New York Stock Exchange - NSY)",
                            "fee":  0,
                            "quantity":  1,
@@ -2561,7 +2561,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2022 (NASDAQ - NDQ)",
                            "fee":  0,
                            "quantity":  1,
@@ -2573,7 +2573,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2022 (Borse Frankfurt - FRA)",
                            "fee":  0,
                            "quantity":  1,
@@ -2585,7 +2585,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -2597,7 +2597,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -2609,7 +2609,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US92343V1044 - Dividend:  - dividendTax: -0.19",
                            "fee":  0.19,
                            "quantity":  1,
@@ -2621,7 +2621,7 @@
                            "symbol":  "VZ"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Dividend:  - dividendTax: -0.70",
                            "fee":  0.7,
                            "quantity":  1,
@@ -2633,7 +2633,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -2645,7 +2645,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -2657,7 +2657,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US02209S1033 - Dividend:  - dividendTax: -0.27",
                            "fee":  0.27,
                            "quantity":  1,
@@ -2669,7 +2669,7 @@
                            "symbol":  "MO"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -2681,7 +2681,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -2693,7 +2693,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US0605051046 - Dividend:  - dividendTax: -0.06",
                            "fee":  0.06,
                            "quantity":  1,
@@ -2705,7 +2705,7 @@
                            "symbol":  "BAC"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (New York Stock Exchange - NSY)",
                            "fee":  0,
                            "quantity":  1,
@@ -2717,7 +2717,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (NASDAQ - NDQ)",
                            "fee":  0,
                            "quantity":  1,
@@ -2729,7 +2729,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (Borse Frankfurt - FRA)",
                            "fee":  0,
                            "quantity":  1,
@@ -2741,7 +2741,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -2753,7 +2753,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -2765,7 +2765,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US6826801036 - Dividend:  - dividendTax: -0.14",
                            "fee":  0.14,
                            "quantity":  1,
@@ -2777,7 +2777,7 @@
                            "symbol":  "OKE"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -2789,7 +2789,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -2801,7 +2801,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US92343V1044 - Dividend:  - dividendTax: -0.19",
                            "fee":  0.19,
                            "quantity":  1,
@@ -2813,7 +2813,7 @@
                            "symbol":  "VZ"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -2825,7 +2825,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -2837,7 +2837,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (New York Stock Exchange - NSY)",
                            "fee":  0,
                            "quantity":  1,
@@ -2849,7 +2849,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (NASDAQ - NDQ)",
                            "fee":  0,
                            "quantity":  1,
@@ -2861,7 +2861,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (Borse Frankfurt - FRA)",
                            "fee":  0,
                            "quantity":  1,
@@ -2873,7 +2873,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Dividend:  - dividendTax: -0.70",
                            "fee":  0.7,
                            "quantity":  1,
@@ -2885,7 +2885,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011540547 - Dividend:  - dividendTax: -0.51",
                            "fee":  0.51,
                            "quantity":  1,
@@ -2897,7 +2897,7 @@
                            "symbol":  "ABN.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -2909,7 +2909,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -2921,7 +2921,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011821202 - Dividend:  - dividendTax: -0.07",
                            "fee":  0.07,
                            "quantity":  1,
@@ -2933,7 +2933,7 @@
                            "symbol":  "INGA.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US02209S1033 - Dividend:  - dividendTax: -0.27",
                            "fee":  0.27,
                            "quantity":  1,
@@ -2945,7 +2945,7 @@
                            "symbol":  "MO"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (New York Stock Exchange - NSY)",
                            "fee":  0,
                            "quantity":  1,
@@ -2957,7 +2957,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (NASDAQ - NDQ)",
                            "fee":  0,
                            "quantity":  1,
@@ -2969,7 +2969,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (Borse Frankfurt - FRA)",
                            "fee":  0,
                            "quantity":  1,
@@ -2981,7 +2981,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -2993,7 +2993,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3005,7 +3005,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US0605051046 - Dividend:  - dividendTax: -0.06",
                            "fee":  0.06,
                            "quantity":  1,
@@ -3017,7 +3017,7 @@
                            "symbol":  "BAC"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011794037 - Dividend:  - dividendTax: -0.13",
                            "fee":  0.13,
                            "quantity":  1,
@@ -3029,7 +3029,7 @@
                            "symbol":  "AD.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (New York Stock Exchange - NSY)",
                            "fee":  0,
                            "quantity":  1,
@@ -3041,7 +3041,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (NASDAQ - NDQ)",
                            "fee":  0,
                            "quantity":  1,
@@ -3053,7 +3053,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (Borse Frankfurt - FRA)",
                            "fee":  0,
                            "quantity":  1,
@@ -3065,7 +3065,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3077,7 +3077,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3089,7 +3089,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US6826801036 - Dividend:  - dividendTax: -0.14",
                            "fee":  0.14,
                            "quantity":  1,
@@ -3101,7 +3101,7 @@
                            "symbol":  "OKE"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3113,7 +3113,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3125,7 +3125,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (New York Stock Exchange - NSY)",
                            "fee":  0,
                            "quantity":  1,
@@ -3137,7 +3137,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (NASDAQ - NDQ)",
                            "fee":  0,
                            "quantity":  1,
@@ -3149,7 +3149,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (Borse Frankfurt - FRA)",
                            "fee":  0,
                            "quantity":  1,
@@ -3161,7 +3161,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Dividend:  - dividendTax: -0.70",
                            "fee":  0.7,
                            "quantity":  1,
@@ -3173,7 +3173,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US92343V1044 - Dividend:  - dividendTax: -0.19",
                            "fee":  0.19,
                            "quantity":  1,
@@ -3185,7 +3185,7 @@
                            "symbol":  "VZ"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US92343V1044 - Dividend:  - dividendTax: -1.26",
                            "fee":  1.26,
                            "quantity":  1,
@@ -3197,7 +3197,7 @@
                            "symbol":  "VZ"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US92343V1044 - Dividendbelasting",
                            "fee":  0,
                            "quantity":  1,
@@ -3209,7 +3209,7 @@
                            "symbol":  "VZ"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (New York Stock Exchange - NSY)",
                            "fee":  0,
                            "quantity":  1,
@@ -3221,7 +3221,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (NASDAQ - NDQ)",
                            "fee":  0,
                            "quantity":  1,
@@ -3233,7 +3233,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (Borse Frankfurt - FRA)",
                            "fee":  0,
                            "quantity":  1,
@@ -3245,7 +3245,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (New York Stock Exchange - NSY)",
                            "fee":  0,
                            "quantity":  1,
@@ -3257,7 +3257,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (NASDAQ - NDQ)",
                            "fee":  0,
                            "quantity":  1,
@@ -3269,7 +3269,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (Borse Frankfurt - FRA)",
                            "fee":  0,
                            "quantity":  1,
@@ -3281,7 +3281,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3293,7 +3293,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3305,7 +3305,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US02209S1033 - Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -3317,7 +3317,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US02209S1033 - Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3329,7 +3329,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US02209S1033 - Koop 2 @ 47,67 USD",
                            "fee":  1,
                            "quantity":  2,
@@ -3341,7 +3341,7 @@
                            "symbol":  "MO"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US0605051046 - Dividend:  - dividendTax: -0.05",
                            "fee":  0.05,
                            "quantity":  1,
@@ -3353,7 +3353,7 @@
                            "symbol":  "BAC"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Dividend:  - dividendTax: -0.55",
                            "fee":  0.55,
                            "quantity":  1,
@@ -3365,7 +3365,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Dividend:  - dividendTax: -3.64",
                            "fee":  3.64,
                            "quantity":  1,
@@ -3377,7 +3377,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Dividend:  - dividendTax: -3.64",
                            "fee":  3.64,
                            "quantity":  1,
@@ -3389,7 +3389,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Dividendbelasting",
                            "fee":  0,
                            "quantity":  1,
@@ -3401,7 +3401,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3413,7 +3413,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3425,7 +3425,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US6826801036 - Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -3437,7 +3437,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US6826801036 - Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3449,7 +3449,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US6826801036 - Koop 1 @ 53,87 USD",
                            "fee":  0.5,
                            "quantity":  1,
@@ -3461,7 +3461,7 @@
                            "symbol":  "OKE"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3473,7 +3473,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3485,7 +3485,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Dividend:  - dividendTax: -7.28",
                            "fee":  7.28,
                            "quantity":  1,
@@ -3497,7 +3497,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Dividendbelasting",
                            "fee":  0,
                            "quantity":  1,
@@ -3509,7 +3509,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Dividend:  - dividendTax: -0.55",
                            "fee":  0.55,
                            "quantity":  1,
@@ -3521,7 +3521,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Dividend:  - dividendTax: -0.55",
                            "fee":  0.55,
                            "quantity":  1,
@@ -3533,7 +3533,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US92343V1044 - Dividend:  - dividendTax: -0.19",
                            "fee":  0.19,
                            "quantity":  1,
@@ -3545,7 +3545,7 @@
                            "symbol":  "VZ"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011794037 - Dividend:  - dividendTax: -0.12",
                            "fee":  0.12,
                            "quantity":  1,
@@ -3557,7 +3557,7 @@
                            "symbol":  "AD.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -3569,7 +3569,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3581,7 +3581,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Koop 2 @ 30,05 USD",
                            "fee":  1,
                            "quantity":  2,
@@ -3593,7 +3593,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (New York Stock Exchange - NSY)",
                            "fee":  0,
                            "quantity":  1,
@@ -3605,7 +3605,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (NASDAQ - NDQ)",
                            "fee":  0,
                            "quantity":  1,
@@ -3617,7 +3617,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (Borse Frankfurt - FRA)",
                            "fee":  0,
                            "quantity":  1,
@@ -3629,7 +3629,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3641,7 +3641,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3653,7 +3653,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US0605051046 - Dividend:  - dividendTax: -0.05",
                            "fee":  0.05,
                            "quantity":  1,
@@ -3665,7 +3665,7 @@
                            "symbol":  "BAC"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -3677,7 +3677,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3689,7 +3689,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Koop 2 @ 28,39 USD",
                            "fee":  1,
                            "quantity":  2,
@@ -3701,7 +3701,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: IE00B3ZW0K18 - Koop 2 @ 84,78 EUR",
                            "fee":  0,
                            "quantity":  2,
@@ -3713,7 +3713,7 @@
                            "symbol":  "IUSE.L"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (NASDAQ - NDQ)",
                            "fee":  0,
                            "quantity":  1,
@@ -3725,7 +3725,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (Borse Frankfurt - FRA)",
                            "fee":  0,
                            "quantity":  1,
@@ -3737,7 +3737,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011821202 - Dividend:  - dividendTax: -0.02",
                            "fee":  0.02,
                            "quantity":  1,
@@ -3749,7 +3749,7 @@
                            "symbol":  "INGA.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: MHY1146L1092 - Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -3761,7 +3761,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: MHY1146L1092 - Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3773,7 +3773,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: MHY1146L1092 - Koop 10 @ 1,24 USD",
                            "fee":  1,
                            "quantity":  10,
@@ -3785,19 +3785,7 @@
                            "symbol":  "CTRM"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
-                           "comment":  "ISIN: AU000000FBR4 - Koop 500 @ 0,039 EUR",
-                           "fee":  15,
-                           "quantity":  500,
-                           "type":  "BUY",
-                           "unitPrice":  0.039,
-                           "currency":  "EUR",
-                           "dataSource":  "YAHOO",
-                           "date":  "2021-02-16T14:42:00.000Z",
-                           "symbol":  "FBR.AX"
-                       },
-                       {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: MHY1146L1092 - Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -3809,7 +3797,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: MHY1146L1092 - Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3821,7 +3809,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: MHY1146L1092 - Koop 25 @ 1,515 USD",
                            "fee":  1,
                            "quantity":  25,
@@ -3833,7 +3821,7 @@
                            "symbol":  "CTRM"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3845,7 +3833,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3857,7 +3845,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Dividend:  - dividendTax: -0.16",
                            "fee":  0.16,
                            "quantity":  1,
@@ -3869,7 +3857,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US92343V1044 - Dividend:  - dividendTax: -0.19",
                            "fee":  0.19,
                            "quantity":  1,
@@ -3881,7 +3869,7 @@
                            "symbol":  "VZ"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2021 (New York Stock Exchange - NSY)",
                            "fee":  0,
                            "quantity":  1,
@@ -3893,7 +3881,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011794037 - Koop 2 @ 23,89 EUR",
                            "fee":  4,
                            "quantity":  2,
@@ -3905,7 +3893,7 @@
                            "symbol":  "AD.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -3917,7 +3905,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3929,7 +3917,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Koop 3 @ 28,89 USD",
                            "fee":  1,
                            "quantity":  3,
@@ -3941,7 +3929,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "DEGIRO Aansluitingskosten 2020 (New York Stock Exchange - NSY)",
                            "fee":  0,
                            "quantity":  1,
@@ -3953,7 +3941,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US0605051046 - Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -3965,7 +3953,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US0605051046 - Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -3977,7 +3965,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US0605051046 - Koop 2 @ 30 USD",
                            "fee":  1,
                            "quantity":  2,
@@ -3989,7 +3977,7 @@
                            "symbol":  "BAC"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011821202 - Koop 1 @ 7,8 EUR",
                            "fee":  2,
                            "quantity":  1,
@@ -4001,7 +3989,7 @@
                            "symbol":  "INGA.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -4013,7 +4001,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -4025,7 +4013,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US00206R1023 - Koop 2 @ 28,9 USD",
                            "fee":  1,
                            "quantity":  2,
@@ -4037,7 +4025,7 @@
                            "symbol":  "T"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US92343V1044 - Valuta Creditering",
                            "fee":  0,
                            "quantity":  1,
@@ -4049,7 +4037,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US92343V1044 - Valuta Debitering",
                            "fee":  0,
                            "quantity":  1,
@@ -4061,7 +4049,7 @@
                            "symbol":  "Fee"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: US92343V1044 - Koop 2 @ 58,87 USD",
                            "fee":  1,
                            "quantity":  2,
@@ -4073,7 +4061,7 @@
                            "symbol":  "VZ"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011540547 - Koop 4 @ 7,726 EUR",
                            "fee":  4,
                            "quantity":  4,
@@ -4085,7 +4073,7 @@
                            "symbol":  "ABN.AS"
                        },
                        {
-                           "accountId":  "037d6f03-7607-4dab-8550-1bdc3030c95e",
+                           "accountId":  "0986e828-5c89-4497-8d08-445f35563bbf",
                            "comment":  "ISIN: NL0011540547 - Koop 1 @ 7,726 EUR",
                            "fee":  0,
                            "quantity":  1,

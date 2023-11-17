@@ -7,11 +7,11 @@ $skippedCsv   = "$($workingDir)\deGiroSkippedLines.csv"
 $exportCsv    = "$($workingDir)\deGiroAccount_psExp.csv"
 $exportJson   = "$($workingDir)\deGiroAccount_psExp.json"
 
-$accountId    = "037d6f03-7607-4dab-8550-1bdc3030c95e"
+$accountId    = "0986e828-5c89-4497-8d08-445f35563bbf"
 $writeLine    = $false
 $skipped      = 0
 
-$import = Import-Csv $csvFile -Delimiter "," -Encoding UTF8 `
+$import = (Get-Content $csvFile | Select-Object -Skip 1) | ConvertFrom-Csv -Delimiter "," `
     -Header "date","time","currencyDate","product","isin","description","fx","currency","amount","col1","col2","orderId"
 
 # Arraylist to hold the activities
@@ -25,6 +25,9 @@ for($idx = 0; $idx -lt $import.Length; $idx++){
 
         if((-not[string]::IsNullOrEmpty($line.date.ToLower())) -and $line.description -notmatch "ideal|flatex|cash sweep|withdrawal|pass-through"){
             #$line.description
+
+            #Exclude certain isins for now
+            if($line.isin -match "AU000000FBR4"){ continue }
 
             # Skip the following but add them to a list for future checks
             if ($line.description.ToLower() -match "productwijziging|geldmarktfonds"){
