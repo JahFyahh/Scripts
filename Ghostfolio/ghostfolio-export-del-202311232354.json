@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "date": "2023-11-23T23:03:02.221Z",
+    "version": "v2.25.1"
+  },
+  "accounts": [
+    {
+      "balance": 280,
+      "comment": null,
+      "currency": "EUR",
+      "id": "a92103e2-54a9-441f-8865-60c9083645e5",
+      "isExcluded": false,
+      "name": "AdmiralMarkets",
+      "platformId": "940d1ae2-7ed0-472b-bd01-8f0299944072"
+    },
+    {
+      "balance": 0,
+      "comment": null,
+      "currency": "EUR",
+      "id": "d4faf223-7472-41e8-bb24-0ee72549d007",
+      "isExcluded": false,
+      "name": "Bitvavo",
+      "platformId": "00042fb3-660f-4bb5-adca-3a2b5cc6f1e2"
+    },
+    {
+      "balance": 0,
+      "comment": null,
+      "currency": "EUR",
+      "id": "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
+      "isExcluded": false,
+      "name": "CoinBase",
+      "platformId": "aaf95190-8a36-4280-b0fa-fbef1975d6d2"
+    },
+    {
+      "balance": 0,
+      "comment": null,
+      "currency": "USD",
+      "id": "27d9288b-9c35-4446-ab5a-0a079aeb1330",
+      "isExcluded": false,
+      "name": "Default Account",
+      "platformId": null
+    },
+    {
+      "balance": 0,
+      "comment": null,
+      "currency": "EUR",
+      "id": "0986e828-5c89-4497-8d08-445f35563bbf",
+      "isExcluded": false,
+      "name": "deGiro",
+      "platformId": "2ddf1cbe-5bfb-484d-ba75-e421de939c65"
+    },
+    {
+      "balance": 26.45,
+      "comment": null,
+      "currency": "EUR",
+      "id": "6c8b6d57-abbd-4b2c-9808-d01d2a3cda09",
+      "isExcluded": false,
+      "name": "Plus500",
+      "platformId": "4cd31135-7ace-435a-ac6b-83cd54a9fea9"
+    },
+    {
+      "balance": 0,
+      "comment": null,
+      "currency": "EUR",
+      "id": "94522bd3-09b3-488b-b82e-642cbf0423d3",
+      "isExcluded": false,
+      "name": "solFlare",
+      "platformId": "ff4bde15-1f64-4f52-a538-c8cc89ea4b22"
+    },
+    {
+      "balance": 0,
+      "comment": null,
+      "currency": "EUR",
+      "id": "c5440db0-f55f-4233-b5b6-6f64853e102a",
+      "isExcluded": false,
+      "name": "trustWallet",
+      "platformId": "0ac1923e-dd87-4e6d-b136-bd6c23cb4836"
+    }
+  ],
+  "activities": [
+    {
+      "accountId": "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
+      "comment": null,
+      "fee": 0,
+      "quantity": 1,
+      "type": "BUY",
+      "unitPrice": 20.81,
+      "currency": "USD",
+      "dataSource": "COINGECKO",
+      "date": "2023-11-23T23:02:36.404Z",
+      "symbol": "avalanche-2"
+    }
+  ]
+}

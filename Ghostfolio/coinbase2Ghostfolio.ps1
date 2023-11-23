@@ -16,22 +16,77 @@ $import = Import-Csv $csvFile -Delimiter "," -Encoding UTF8
 # Arraylist to hold the activities
 $arraylist  = New-Object System.Collections.ArrayList
 
+# Get list of all symbols from coingecko
+$apiUrl = "https://api.coingecko.com/api/v3/coins/list"
+$response = Invoke-RestMethod -Uri $apiUrl -Method Get -ErrorAction Stop
+$global:selectedOptions = @{}
+
+function Get-CoinGeckoSymbol(){
+    param (
+        [string]$ticker
+    )
+
+    # Exceptions on the CoinGecko rule
+    #$global:selectedOptions["AVAX"] = "avalanche"
+
+    $coin = $response | Where-Object {$_.symbol -eq $ticker}
+
+    if($coin.Count -gt 1){
+        do {
+            # If there are multiple matching coins, check if a selection has been made before
+            if ($global:selectedOptions.ContainsKey($ticker)) {
+                $previouslySelected = $global:selectedOptions[$ticker]
+                $symbol = $previouslySelected
+
+                break
+            }
+
+            # Display the menu
+            Write-Host "Choose a coin for " $ticker ":"
+        
+            for ($i = 0; $i -lt $coin.Count; $i++) {
+                Write-Host "$($i + 1). $($coin[$i].id)"
+            }
+        
+            # Get user input
+            $choice = Read-Host "Enter the number of your choice"
+        
+            # Validate user input
+            if ($choice -ge 1 -and $choice -le $coin.Count) {
+                # Subtract 1 to get the correct index
+                $selectedCoin = $coin[$choice - 1]
+                $symbol = $selectedCoin.id
+                
+                # Save the selection for future occurrences
+                $global:selectedOptions[$ticker] = $symbol
+
+                break  # Exit the loop if a valid choice is made
+            } else {
+                Write-Warning "Invalid choice. Please enter a valid number."
+            }
+        } while ($true)  # Loop until a valid choice is made
+    }
+    else { $symbol = $coin.id }
+
+    return $symbol.ToLower()
+}
+
 # Get relevant lines
 for($idx = 0; $idx -lt $import.Length; $idx++){
     try{
         $line           = $import[$idx]
-        $dataSource     = "YAHOO"
+        $dataSource     = "COINGECKO"
         $date           = $line.Timestamp
-        $symbol         = $line.Asset + 'USD'
         $comment        = "Coinbase: " + $line.Notes
         $baseCurrency   = $line.'Spot Price Currency'
+        $symbol         = Get-CoinGeckoSymbol -ticker $line.Asset
         $quantity       = [math]::Abs([float]($line.'Quantity Transacted' -replace ',', '.'))
-        
+
         if($line.'Spot Price at Transaction'){ $unitPrice = [float]($line.'Spot Price at Transaction' -replace ',', '.') }
         else { $unitPrice = 0.00001 }
         
         if($line.'Fees and/or Spread'){ $fee  = [float]($line.'Fees and/or Spread' -replace ',', '.')}
-        else { $fee = 0 }
+        else { $fee = 0.00001 }
 
         if ($line.'Transaction Type'.ToLower() -match "buy|learning reward|rewards income|receive"){
             $type = 'BUY'
@@ -45,9 +100,9 @@ for($idx = 0; $idx -lt $import.Length; $idx++){
 
         elseif($line.'Transaction Type'.ToLower() -match "convert"){
             $fromQuantity = [float]($line.Notes.split(" ")[1] -replace ',', '.') 
-            $fromSymbol   = $line.Notes.split(" ")[2] + "USD"
+            $fromSymbol   = Get-CoinGeckoSymbol -ticker $line.Notes.split(" ")[2]
             $toQuantity   = [float]($line.Notes.split(" ")[4] -replace ',', '.') 
-            $toSymbol     = $line.Notes.split(" ")[5] + "USD"
+            $toSymbol     = Get-CoinGeckoSymbol -ticker $line.Notes.split(" ")[5]
 
             $arraylist.Add(
                 [PSCustomObject]@{
