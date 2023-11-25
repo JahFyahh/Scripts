@@ -8,9 +8,28 @@ $exportCsv       = "$($workingDir)\CoinbaseCrypto2Ghost.csv"
 $exportJson      = "$($workingDir)\CoinbaseCrypto2Ghost.json"
 $optionsFilePath = "$($workingDir)\cryptoSelectedOptions.xml"
 
+$ghostToken  = "4ca6941ff18a89812dffc2e4f56a08f1927750b07c2716028b0be343460c0ad44f3c363b13a28cc6a0f65d04e795a697279b2b86306e088c61d1de93525f51e0"
 $accountId    = "e50298c4-43b5-41db-8f9c-fcbcbc4709fc"
 $writeLine    = $false
 $skipped      = 0
+
+$ghostApiUri = "http://192.168.1.11:3333/api/v1"
+$ghostImport = $ghostApiUri + "/import"
+
+$ghostHeader = @{ Authorization = "Bearer " + (Invoke-RestMethod -Uri ($ghostApiUri + "/auth/anonymous") -Method Post -Body @{ accessToken = $ghostToken }).authToken 
+                    ContentType = "application/json"
+                    Accept = 'application/json, text/plain, */*'
+                    "Accept-Language" = 'en-GB,en-US;q=0.9,en;q=0.8,de;q=0.7'
+                    "Cache-Control" = 'no-cache'
+                    "Content-Type" = 'application/json'
+                    Origin = 'http://localhost:4200'
+                    Pragma = 'no-cache'
+                    Referer = 'http://localhost:4200/en/portfolio/activities'
+                    "Sec-Fetch-Dest" = 'empty'
+                    "Sec-Fetch-Mode" = 'cors'
+                    "Sec-Fetch-Site" = 'same-origin'
+                    "User-Agent" = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'
+                }
 
 $import = Import-Csv $csvFile -Delimiter "," -Encoding UTF8 
 
@@ -19,7 +38,7 @@ $arraylist  = New-Object System.Collections.ArrayList
 
 # Get list of all symbols from coingecko
 $apiUrl = "https://api.coingecko.com/api/v3/coins/list"
-$response = Invoke-RestMethod -Uri $apiUrl -Method Get -ErrorAction Stop
+$CoinList = Invoke-RestMethod -Uri $apiUrl -Method Get -ErrorAction Stop
 
 # Reload previously selected options
 $global:selectedOptions = @{}
@@ -36,7 +55,7 @@ function Get-CoinGeckoSymbol(){
     # Exceptions on the CoinGecko rule
     #$global:selectedOptions["AVAX"] = "avalanche"
 
-    $coin = $response | Where-Object {$_.symbol -eq $ticker}
+    $coin = $CoinList | Where-Object {$_.symbol -eq $ticker}
 
     if($coin.Count -gt 1){
         do {
@@ -111,35 +130,36 @@ for($idx = 0; $idx -lt $import.Length; $idx++){
             $toQuantity   = [float]($line.Notes.split(" ")[4] -replace ',', '.') 
             $toSymbol     = Get-CoinGeckoSymbol -ticker $line.Notes.split(" ")[5]
 
-            $arraylist.Add(
-                [PSCustomObject]@{
-                    accountId = $accountId
-                    comment = $comment
-                    fee = 0
-                    quantity = $fromQuantity
-                    type = "SELL"
-                    unitPrice = $unitPrice
-                    currency = $baseCurrency
-                    dataSource = $dataSource
-                    date = $date
-                    symbol = $fromSymbol
-                }
-            ) | Out-Null
+            $ghostBody = @{
+                activities = @(
+                    @{
+                        accountId = $accountId
+                        comment = $comment
+                        fee = 0
+                        quantity = $fromQuantity
+                        type = "SELL"
+                        unitPrice = $unitPrice
+                        currency = $baseCurrency
+                        dataSource = $dataSource
+                        date = $date
+                        symbol = $fromSymbol
+                    },
+                    @{
+                        accountId = $accountId
+                        comment = $comment
+                        fee = $fee
+                        quantity = $toQuantity
+                        type = "BUY"
+                        unitPrice = $unitPrice
+                        currency = $baseCurrency
+                        dataSource = $dataSource
+                        date = $date
+                        symbol = $toSymbol
+                    }
+                )
+            } | ConvertTo-Json
 
-            $arraylist.Add(
-                [PSCustomObject]@{
-                    accountId = $accountId
-                    comment = $comment
-                    fee = $fee
-                    quantity = $toQuantity
-                    type = "BUY"
-                    unitPrice = $unitPrice
-                    currency = $baseCurrency
-                    dataSource = $dataSource
-                    date = $date
-                    symbol = $toSymbol
-                }
-            ) | Out-Null
+            $ghostResponse = Invoke-RestMethod -Uri $ghostImport -Method Post -Body $ghostBody -Headers $ghostHeader
 
             $writeLine = $false
         }
@@ -152,21 +172,25 @@ for($idx = 0; $idx -lt $import.Length; $idx++){
 
         if($writeLine){
             # Add object to Arraylist
-            $arraylist.Add(
-                [PSCustomObject]@{
-                    accountId = $accountId
-                    comment = $comment
-                    fee = $fee
-                    quantity = $quantity
-                    type = $type
-                    unitPrice = $unitPrice
-                    currency = $baseCurrency
-                    dataSource = $dataSource
-                    date = $date
-                    symbol = $symbol
-                }
-            ) | Out-Null
+            $ghostBody = @{
+                activities = @(
+                    @{
+                        accountId = $accountId
+                        comment = $comment
+                        fee = $fee
+                        quantity = $quantity
+                        type = $type
+                        unitPrice = $unitPrice
+                        currency = $baseCurrency
+                        dataSource = $dataSource
+                        date = $date
+                        symbol = $symbol
+                    }
+                )
+            } | ConvertTo-Json
 
+            $ghostResponse = Invoke-RestMethod -Uri $ghostImport -Method Post -Body $ghostBody -Headers $ghostHeader
+            
             $writeLine = $false
             #break
         }
@@ -176,7 +200,10 @@ for($idx = 0; $idx -lt $import.Length; $idx++){
     catch{
         $line | Export-Csv -Path $skippedCsv -Append -NoTypeInformation -Delimiter ";"
         $Error[0]
+        $idx
         $line
+
+        if($Error[0] -match "Bad Request") { $idx-- }
     }
 }
 
