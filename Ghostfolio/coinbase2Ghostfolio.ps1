@@ -1,11 +1,12 @@
 Remove-Variable * -ErrorAction SilentlyContinue
 
 #Home
-$workingDir   = "$PSScriptRoot"
-$csvFile      = "$($workingDir)\CoinbaseCryptoSheet.csv"
-$skippedCsv   = "$($workingDir)\CoinbaseSkippedLines.csv"
-$exportCsv    = "$($workingDir)\CoinbaseCrypto2Ghost.csv"
-$exportJson   = "$($workingDir)\CoinbaseCrypto2Ghost.json"
+$workingDir      = "$PSScriptRoot"
+$csvFile         = "$($workingDir)\CoinbaseCryptoSheet.csv"
+$skippedCsv      = "$($workingDir)\CoinbaseSkippedLines.csv"
+$exportCsv       = "$($workingDir)\CoinbaseCrypto2Ghost.csv"
+$exportJson      = "$($workingDir)\CoinbaseCrypto2Ghost.json"
+$optionsFilePath = "$($workingDir)\CoinbaseSelectedOptions.xml"
 
 $accountId    = "e50298c4-43b5-41db-8f9c-fcbcbc4709fc"
 $writeLine    = $false
@@ -19,7 +20,13 @@ $arraylist  = New-Object System.Collections.ArrayList
 # Get list of all symbols from coingecko
 $apiUrl = "https://api.coingecko.com/api/v3/coins/list"
 $response = Invoke-RestMethod -Uri $apiUrl -Method Get -ErrorAction Stop
+
+# Reload previously selected options
 $global:selectedOptions = @{}
+
+if (Test-Path $optionsFilePath) {
+    $global:selectedOptions = Import-Clixml -Path $optionsFilePath
+}
 
 function Get-CoinGeckoSymbol(){
     param (
@@ -177,7 +184,7 @@ Write-Host -ForegroundColor Yellow "Skipped $($skipped) lines"
 
 if($arraylist) {
     Write-Host "Exporting to file" -ForegroundColor Yellow
-    $arraylist | select @{n="date";e={(Get-Date $_.date -Format "yyyyMMdd")}},@{Name="Code" ;Expression={$_.symbol}},dataSource,currency,@{n="Price";e={$_.unitPrice -replace ',','.'}},Quantity,@{n="Action";e={$_.type}},@{n="Fee";e={$_.fee -replace ',','.'}},@{n="Note";e={$_.comment}} | Export-Csv $exportCsv -NoTypeInformation -Delimiter "," 
+    $arraylist | Select-Object @{n="date";e={(Get-Date $_.date -Format "yyyyMMdd")}},@{Name="Code" ;Expression={$_.symbol}},dataSource,currency,@{n="Price";e={$_.unitPrice -replace ',','.'}},Quantity,@{n="Action";e={$_.type}},@{n="Fee";e={$_.fee -replace ',','.'}},@{n="Note";e={$_.comment}} | Export-Csv $exportCsv -NoTypeInformation -Delimiter "," 
 
     $jsonObject = @{
         meta = @{ date = (Get-Date -Format "yyyy-MM-ddTHH:mm:ss.000Z"); version = "v2.14.0" }
@@ -185,6 +192,9 @@ if($arraylist) {
     }
 
     if($jsonObject) { $jsonObject | ConvertTo-Json | Set-Content -Path $exportJson }
+
+    # Export the updated selected options to the file
+    $global:selectedOptions | Export-Clixml -Path $optionsFilePath
 }
 
 
