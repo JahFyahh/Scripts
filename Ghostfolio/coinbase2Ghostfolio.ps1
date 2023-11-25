@@ -6,7 +6,7 @@ $csvFile         = "$($workingDir)\CoinbaseCryptoSheet.csv"
 $skippedCsv      = "$($workingDir)\CoinbaseSkippedLines.csv"
 $exportCsv       = "$($workingDir)\CoinbaseCrypto2Ghost.csv"
 $exportJson      = "$($workingDir)\CoinbaseCrypto2Ghost.json"
-$optionsFilePath = "$($workingDir)\CoinbaseSelectedOptions.xml"
+$optionsFilePath = "$($workingDir)\cryptoSelectedOptions.xml"
 
 $accountId    = "e50298c4-43b5-41db-8f9c-fcbcbc4709fc"
 $writeLine    = $false
