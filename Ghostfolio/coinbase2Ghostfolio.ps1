@@ -8,10 +8,12 @@ $exportCsv       = "$($workingDir)\CoinbaseCrypto2Ghost.csv"
 $exportJson      = "$($workingDir)\CoinbaseCrypto2Ghost.json"
 $optionsFilePath = "$($workingDir)\cryptoSelectedOptions.xml"
 
-$ghostToken  = "4ca6941ff18a89812dffc2e4f56a08f1927750b07c2716028b0be343460c0ad44f3c363b13a28cc6a0f65d04e795a697279b2b86306e088c61d1de93525f51e0"
-$accountId    = "e50298c4-43b5-41db-8f9c-fcbcbc4709fc"
-$writeLine    = $false
-$skipped      = 0
+$ghostToken    = "4ca6941ff18a89812dffc2e4f56a08f1927750b07c2716028b0be343460c0ad44f3c363b13a28cc6a0f65d04e795a697279b2b86306e088c61d1de93525f51e0"
+$accountId     = "e50298c4-43b5-41db-8f9c-fcbcbc4709fc"
+$writeLine     = $false
+$skipped       = 0
+$retryAttempts = 3
+$retryDelaySec = 5
 
 $ghostApiUri = "http://192.168.1.11:3333/api/v1"
 $ghostImport = $ghostApiUri + "/import"
@@ -159,7 +161,31 @@ for($idx = 0; $idx -lt $import.Length; $idx++){
                 )
             } | ConvertTo-Json
 
-            $ghostResponse = Invoke-RestMethod -Uri $ghostImport -Method Post -Body $ghostBody -Headers $ghostHeader
+            for ($retryCount = 0; $retryCount -lt $retryAttempts; $retryCount++) {
+                try {
+                    # Make the REST request
+                    $ghostResponse = Invoke-RestMethod -Uri $ghostImport -Method Post -Body $ghostBody -Headers $ghostHeader
+            
+                    # If the request is successful, break out of the retry loop
+
+                    break
+                } catch {
+                    # If an exception occurs, output the error and wait for a moment before retrying
+                    Write-Output "Error: $_"
+                    Write-Output "Attempt $attempt failed. Retrying in $retryDelaySec seconds..."
+                    Start-Sleep -Seconds $retryDelaySec
+                }
+            }
+
+            # Check if all retries failed
+            if ($attempt -gt $retries) {
+                Write-Output "All retries failed. Exporting to CSV."
+                $line | Export-Csv -Path $skippedCsv -Append -NoTypeInformation -Delimiter ";"
+                $skipped++
+            }
+            else {
+                Write-Output "Request $idx successful after $attempt attempts."
+            }
 
             $writeLine = $false
         }
@@ -189,8 +215,32 @@ for($idx = 0; $idx -lt $import.Length; $idx++){
                 )
             } | ConvertTo-Json
 
-            $ghostResponse = Invoke-RestMethod -Uri $ghostImport -Method Post -Body $ghostBody -Headers $ghostHeader
+            for ($retryCount = 0; $retryCount -lt $retryAttempts; $retryCount++) {
+                try {
+                    # Make the REST request
+                    $ghostResponse = Invoke-RestMethod -Uri $ghostImport -Method Post -Body $ghostBody -Headers $ghostHeader
             
+                    # If the request is successful, break out of the retry loop
+
+                    break
+                } catch {
+                    # If an exception occurs, output the error and wait for a moment before retrying
+                    Write-Output "Error: $_"
+                    Write-Output "Attempt $attempt failed. Retrying in $retryDelaySec seconds..."
+                    Start-Sleep -Seconds $retryDelaySec
+                }
+            }
+
+            # Check if all retries failed
+            if ($attempt -gt $retries) {
+                Write-Output "All retries failed. Exporting to CSV."
+                $line | Export-Csv -Path $skippedCsv -Append -NoTypeInformation -Delimiter ";"
+                $skipped++
+            }
+            else {
+                Write-Output "Request $idx successful after $attempt attempts."
+            }
+
             $writeLine = $false
             #break
         }

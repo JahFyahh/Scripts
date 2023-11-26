@@ -13,6 +13,7 @@ $accountId     = "d4faf223-7472-41e8-bb24-0ee72549d007"
 $writeLine     = $false
 $skipped       = 0
 $retryAttempts = 3
+$retryDelaySec = 5
 
 $ghostApiUri = "http://192.168.1.11:3333/api/v1"
 $ghostImport = $ghostApiUri + "/import"
@@ -195,13 +196,24 @@ for($idx = 0; $idx -lt $import.Length; $idx++){
                     $ghostResponse = Invoke-RestMethod -Uri $ghostImport -Method Post -Body $ghostBody -Headers $ghostHeader
             
                     # If the request is successful, break out of the retry loop
+
                     break
                 } catch {
                     # If an exception occurs, output the error and wait for a moment before retrying
                     Write-Output "Error: $_"
-                    Write-Output "Retrying in 5 seconds..."
-                    Start-Sleep -Seconds 5
+                    Write-Output "Attempt $attempt failed. Retrying in $retryDelaySec seconds..."
+                    Start-Sleep -Seconds $retryDelaySec
                 }
+            }
+
+            # Check if all retries failed
+            if ($attempt -gt $retries) {
+                Write-Output "All retries failed. Exporting to CSV."
+                $line | Export-Csv -Path $skippedCsv -Append -NoTypeInformation -Delimiter ";"
+                $skipped++
+            }
+            else {
+                Write-Output "Request $idx successful after $attempt attempts."
             }
             
             $writeLine = $false
