@@ -122,6 +122,7 @@ function Get-CoinPrice(){
 }
 
 # Get relevant lines
+Write-Output "Found $($import.Length) items to process"
 for($idx = 0; $idx -lt $import.Length; $idx++){
     try{
         $line         = $import[$idx]
@@ -190,7 +191,7 @@ for($idx = 0; $idx -lt $import.Length; $idx++){
                 )
             } | ConvertTo-Json
 
-            for ($retryCount = 0; $retryCount -lt $retryAttempts; $retryCount++) {
+            for ($attempt = 1; $attempt -le $retryAttempts; $attempt++) {
                 try {
                     # Make the REST request
                     $ghostResponse = Invoke-RestMethod -Uri $ghostImport -Method Post -Body $ghostBody -Headers $ghostHeader
@@ -207,7 +208,7 @@ for($idx = 0; $idx -lt $import.Length; $idx++){
             }
 
             # Check if all retries failed
-            if ($attempt -gt $retries) {
+            if ($attempt -gt $retryAttempts) {
                 Write-Output "All retries failed. Exporting to CSV."
                 $line | Export-Csv -Path $skippedCsv -Append -NoTypeInformation -Delimiter ";"
                 $skipped++
