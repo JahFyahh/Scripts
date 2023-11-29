@@ -280,7 +280,7 @@ try {
         }
         finally{
             # Update the progress bar
-            $percentComplete = ($idx / $import.Count) * 100
+            $percentComplete = [math]::Round(($idx / $import.Count) * 100, 2)
             Write-Progress -Activity "Processing Items" -Status "$percentComplete% Complete" -PercentComplete $percentComplete -CurrentOperation "Processing Item $item"
         }
     }
