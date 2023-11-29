@@ -35,6 +35,8 @@ $ghostHeader = @{ Authorization = "Bearer " + (Invoke-RestMethod -Uri ($ghostApi
 
 $import = Import-Csv $csvFile -Delimiter "," -Encoding UTF8 
 
+if(Test-Path -Path $skippedCsv) { Remove-Item -Path $skippedCsv -Force }
+
 # Arraylist to hold the activities
 $arraylist  = New-Object System.Collections.ArrayList
 

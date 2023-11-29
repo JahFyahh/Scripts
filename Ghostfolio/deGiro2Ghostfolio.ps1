@@ -17,6 +17,8 @@ $import = (Get-Content $csvFile | Select-Object -Skip 1) | ConvertFrom-Csv -Deli
 # Arraylist to hold the activities
 $arraylist  = New-Object System.Collections.ArrayList
 
+if(Test-Path -Path $skippedCsv) { Remove-Item -Path $skippedCsv -Force }
+
 # Get relevant lines
 for($idx = 0; $idx -lt $import.Length; $idx++){
     try{
