@@ -143,8 +143,8 @@ try{
                 $quantity   = [math]::Abs([float]($line.Amount -replace ',', '.'))
                 
                 # Convert date and time strings to [datetime] objects
-                $dateObject = [datetime]::ParseExact($line.date, 'dd-MM-yyyy', $null)
-                $timeObject = [datetime]::ParseExact($line.time, 'HH:mm', $null)
+                $dateObject = [datetime]::ParseExact($line.date, 'yyyy-MM-dd', $null)
+                $timeObject = [datetime]::ParseExact(($line.time.split(".")[0]), 'HH:mm:ss', $null)
                 $date       = Get-Date -Year ($dateObject).Year -Month ($dateObject).Month -Day ($dateObject).Day `
                                 -Hour ($timeObject).Hour -Minute ($timeObject).Minute -Second 0 -Format "yyyy-MM-ddTHH:mm:ss.000Z"
 
