@@ -3,27 +3,51 @@ Remove-Variable * -ErrorAction SilentlyContinue
 #Home
 $workingDir      = "$PSScriptRoot"
 $csvFile         = "$($workingDir)\Ings_Alle_rekeningen.csv"
-$skippedCsv      = "$($workingDir)\SkippedLines.csv"
+$skippedCsv      = "$($workingDir)\fireFlySkippedLines.csv"
 
-$fireToken     = "mK1irzqWYUdWm85q2ISN5d2pykt3sEN3zwzzmcHd"
+$apiToken     = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxOCIsImp0aSI6IjMzNThkMjM4MGEyYjJiMjVlNDQ5MGRlZGM1ZTYwZjA0NGU3MWU4OTNhMTYyOGYwNGYxYTg4ZTY4MDU2MzMwNjhhMTdmNjE5YTBjMjYyZTE5IiwiaWF0IjoxNzAyODQ4ODAzLjQ5MzgyLCJuYmYiOjE3MDI4NDg4MDMuNDkzODM0LCJleHAiOjE3MzQ0NzEyMDMuMzk3NTc2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ilPD09gFmszChrJ2c9bfCm9GDYju5FaxquWsBhAYqT131yZ5lUnHKfkXOm2r2ID4_XCxeQX6brzLS7T3zLRSarsqXj1HoKK255MOUd2R9AV3P4JEh6WAnl1PIMu6fBRa84qQ2LAuvYSR4Azlthqw1SZ6mrXw32zgSn1-Sowfcr9Htvblyexvv113rgOiMnuDBC-0emr1wKmIDNsPXLLWBenqHCAnEFSmnz1D6RFCG1ENz4TVbAX3dMpy_klh0J5OUkfEsjX_T2Zxiruigl0dmM_cco3YWh8Eof4vTgujHBRiGtdJMIONO21kYLz4rmrpzohDm6woyWS1oE4Yj8I76xFpdrqJVKi33RzwroY3v3qpeA8geokvN7HwjvZREF-gKG6vOBbPyWJy1BXExKJcB3w27y7Zqt321zeyingFYfzOpF-R1BdQ821ezJob3DBSYM1RwRSYNcIfKGj7wKdsizlLCUqti1bECAz-HDJjEeuZsqSeeSAqWY64RC6K0Tl7Z2rJAgRTec3K_Q7aeZ5uRDUPffk-8SurYWGx_b3_ZWPC2qGuSXIb5_d54jRiTMduaDKfGpN9cDHhBSJa5rfL1FDlRYmyU6FvmVRlT2F2yNLYc9-jSN2mn7Cb-_xh-IwlOCfNs6pEtLmxHw5JyjSUrVoQC1Jd92UY9g7JFaSsvaQ"
 $accountId     = "d4faf223-7472-41e8-bb24-0ee72549d007"
-$writeLine     = $false
+$writeLine     = $true
 $skipped       = 0
 $retryAttempts = 3
 $retryDelaySec = 5
 
 # Specify the URL
-$url = "http://http://192.168.1.11:3334/api/v1/transactions"
+$url = "http://192.168.1.11:3334/api/v1/"
 
 # Specify the headers
 $headers = @{
-    'accept'       = 'application/vnd.api+json'
-    'Content-Type' = 'application/json'
+    'Authorization' = "Bearer $apiToken"
+    'accept'         = 'application/vnd.api+json'
+    'Content-Type'   = 'application/json'
+}
+
+function get-accountId(){
+    param(
+        [string]$account,
+        [string]$name
+    )
+
+    # Switch statement based on account ID
+    switch ($account) {
+        "NL35INGB0002956047" { 
+            return @(677, "Hr IRD Luciano")
+        }
+        "NL42INGB0628505914" { 
+            return @(680, "Hr IRD Luciano,Mw N Boom")
+        }
+        Default {
+            # Handle other account IDs or provide a default value if needed
+            return @("", $name)
+        }
+    }
 }
 
 try {
     #import file
     $import = Import-Csv $csvFile -Delimiter ";" -Encoding UTF8 
+
+    #$accountList = Invoke-RestMethod -Uri ($url + "accounts?limit=1000&page=1") -Method Get -Headers $headers
 
     # Initialize the progress bar
     Write-Progress -Activity "Processing Items" -Status "0% Complete" -PercentComplete 0
@@ -32,51 +56,82 @@ try {
     for($idx = 0; $idx -lt $import.Length; $idx++){
         try{
             $line         = $import[$idx]
+            $description  = $line.Notifications
+            $name         = $line.'Name / Description'
+            $amount       = $line.'Amount (EUR)'.Replace(",",".")
+            $tag          = @($line.Code,$line.'Transaction type',$line.Tag) | Where-Object { -not [string]::IsNullOrWhiteSpace($_) }
             $date         = Get-Date ([datetime]::ParseExact($line.date, 'yyyyMMdd', $null)) `
                                 -Format "yyyy-MM-ddTHH:mm"
-            $description  = $line.Notifications
-            $amount       = $line.'Amount (EUR)'.Replace(",",".")
-            $tag          = @($line.Tag, $line.Code, $line.'Transaction type')
-            $accountId    =
-
-            # Switch statement based on account ID
-            switch ($accountId) {
-                "NL35INGB0002956047" { 
-                    $accountNumber = 677
-                }
-                "NL42INGB0628505914" { 
-                    $accountNumber = 680
-                }
-                Default {
-                    # Handle other account IDs or provide a default value if needed
-                    $accountNumber = -1
-                }
-            }
 
             if($line.'Debit/credit'.ToLower() -eq "credit") { 
-                $type = "deposit"
+                $type             = "deposit"
+                $source_id        = (get-accountId -account $line.Counterparty -name $line.'Name / Description')[0]
+                $source_name      = (get-accountId -account $line.Counterparty -name $line.'Name / Description')[1]
+                $destination_id   = (get-accountId -account $line.Account -name $line.'Name / Description')[0]
+                $destination_name = (get-accountId -account $line.Account -name $line.'Name / Description')[1]
             }
             elseif($line.'Debit/credit'.ToLower() -eq "debit") {  
-                $type = "withdrawal" 
+                $type             = "withdrawal" 
+                $source_id        = (get-accountId -account $line.Account -name $line.'Name / Description')[0]
+                $source_name      = (get-accountId -account $line.Account -name $line.'Name / Description')[1]
+                $destination_id   = (get-accountId -account $line.Counterparty -name $line.'Name / Description')[0]
+                $destination_name = (get-accountId -account $line.Counterparty -name $line.'Name / Description')[1]
             }
 
-            
-            
-            
-            $destination_id = "680"
-            $destination_name = "Hr IRD Luciano,Mw N Boom"
-            $source_id = "1870"
-            $source_name = "Nayrobiz"
+            if($writeLine){
+                # Specify the JSON payload
+                $jsonPayload = @{
+                    "error_if_duplicate_hash" = $true
+                    "apply_rules"             = $true
+                    "fire_webhooks"           = $true
+                    "group_title"             = ""
+                    "transactions"            = @(
+                        @{
+                            "type"                   = $type
+                            "date"                   = $date
+                            "amount"                 = $amount
+                            "description"            = $description
+                            "source_id"              = $source_id
+                            "source_name"            = $source_name
+                            "destination_id"         = $destination_id
+                            "destination_name"       = $destination_name
+                            "tags"                   = $tag
+                        }
+                    )
+                } | ConvertTo-Json
+
+                # Make the API call
+                $response = Invoke-RestMethod -Uri ($url + "transactions") -Method Post -Headers $headers -Body $jsonPayload
+
+                # Display the response
+                # $response
+                Write-Host "http://192.168.1.11:3334/transactions/show/$($response.data.id)"
+            }
+
         }
         catch{
-            $line | Export-Csv -Path $skippedCsv -Append -NoTypeInformation -Delimiter ";"
-            $Error[0]
-            $idx
-            $line
+            # Handle the error
+            if ($_.Exception.Response -ne $null) {
+                $errorDetails = $_.Exception.Response.GetResponseStream()
+                $reader = New-Object System.IO.StreamReader($errorDetails)
+                $responseContent = $reader.ReadToEnd()
+                Write-Host -ForegroundColor Red "Validation Error Details: $responseContent"
+            }
+            $exceptDetails = $_
+            Write-Host -ForegroundColor Red "Error details: $_"
 
-            if($Error[0] -match "Bad Request") { $idx-- }
+            # Added skipped/failed line to file
+            $line | Add-Member -MemberType NoteProperty -Name "idx" -Value $idx -Force
+            $line | Add-Member -MemberType NoteProperty -Name "apiError" -Value ($responseContent | ConvertFrom-Json).message -Force
+            $line | Add-Member -MemberType NoteProperty -Name "psError" -Value $exceptDetails.Exception.Message -Force
+            $line | Export-Csv -Path $skippedCsv -Append -NoTypeInformation -Delimiter ";"
+
+
         }
         finally{
+            Remove-Variable line, jsonPayload, destination_id, destination_name, source_id, source_name, type, exceptDetails, responseContent, `
+                date, amount, description, tag, response -ErrorAction SilentlyContinue
+
             # Update the progress bar
             $percentComplete = [math]::Round(($idx / $import.Count) * 100, 2)
             Write-Progress -Activity "Processing Items" -Status "$percentComplete% Complete" -PercentComplete $percentComplete -CurrentOperation "Processing Item $item"
@@ -91,59 +146,18 @@ finally {
     Write-Progress -Activity "Processing Items" -Status "100% Complete" -PercentComplete 100 -Completed
 }
     
+<#
 
-# Specify the JSON payload
-$jsonPayload = @{
-    "error_if_duplicate_hash" = $true
-    "apply_rules"             = $true
-    "fire_webhooks"           = $true
-    "group_title"             = "Split transaction title."
-    "transactions"            = @(
-        @{
-            "type"                   = $type
-            "date"                   = $date
-            "amount"                 = $amount
-            "description"            = $description
-            "order"                  = 0
-            "currency_id"            = "12"
-            "currency_code"          = "EUR"
-            "foreign_amount"         = "123.45"
-            "foreign_currency_id"    = "17"
-            "foreign_currency_code"  = "USD"
-            "budget_id"              = "4"
-            "category_id"            = "43"
-            "category_name"          = "Groceries"
-            "source_id"              = "2"
-            "source_name"            = "Checking account"
-            "destination_id"         = "2"
-            "destination_name"       = "Buy and Large"
-            "reconciled"             = $false
-            "piggy_bank_id"          = 0
-            "piggy_bank_name"        = "string"
-            "bill_id"                = "112"
-            "bill_name"              = "Monthly rent"
-            "tags"                   = $null
-            "notes"                  = "Some example notes"
-            "internal_reference"     = "string"
-            "external_id"            = "string"
-            "external_url"           = "string"
-            "bunq_payment_id"        = "string"
-            "sepa_cc"                = "string"
-            "sepa_ct_op"             = "string"
-            "sepa_ct_id"             = "string"
-            "sepa_db"                = "string"
-            "sepa_country"           = "string"
-            "sepa_ep"                = "string"
-            "sepa_ci"                = "string"
-            "sepa_batch_id"          = "string"
-            "interest_date"          = "2023-12-17T14:29:17.067Z"
-            "book_date"              = "2023-12-17T14:29:17.067Z"
-            "process_date"           = "2023-12-17T14:29:17.067Z"
-            "due_date"               = "2023-12-17T14:29:17.067Z"
-            "payment_date"           = "2023-12-17T14:29:17.067Z"
-            "invoice_date"           = "2023-12-17T14:29:17.067Z"
-        }
-    )
+
+@{
+    "type"           = "withdrawal"
+    "date"           = "2023-01-01T12:00:00Z"
+    "amount"         = "100.00"
+    "description"    = "Transaction Description"
+    "currency_code"  = "USD"
+    "source_name"    = "Source Account Name"
+    "destination_name" = "Destination Account Name"
+    # Add other transaction details as needed
 }
 
 # Convert the payload to JSON
@@ -185,3 +199,5 @@ Invoke-WebRequest -UseBasicParsing -Uri "http://192.168.1.11:3334/api/v1/transac
 } `
 -ContentType "application/json" `
 -Body "{`"apply_rules`":true,`"fire_webhooks`":true,`"transactions`":[{`"type`":`"deposit`",`"date`":`"2023-12-17T00:00`",`"amount`":`"500`",`"description`":`"Name: Nayrobiz Description: prive onttrekking IBAN: NL62INGB0007738534 Value date: 01/12/2022`",`"source_id`":`"1870`",`"source_name`":`"Nayrobiz`",`"destination_id`":`"680`",`"destination_name`":`"Hr IRD Luciano,Mw N Boom`",`"category_name`":`"`",`"interest_date`":`"`",`"book_date`":`"`",`"process_date`":`"`",`"due_date`":`"`",`"payment_date`":`"`",`"invoice_date`":`"`",`"internal_reference`":`"`",`"notes`":`"`",`"external_url`":`"`"}]}"
+
+#>
