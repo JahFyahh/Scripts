@@ -1,4 +1,4 @@
-"date","Code","dataSource","currency","Price","quantity","Action","Fee","Note"
+"date","Code","dataSource","currency","Price","quantity","Action","Fee","Note""
 "20231113","bitcoin","COINGECKO",,"1E-05","2.2E-06","BUY","0","staking: Bitvavo Transaction ID: 5265e16f-a750-404c-b278-8fe98d479470"
 "20231113","ethereum","COINGECKO",,"1E-05","0.0001963","BUY","0","staking: Bitvavo Transaction ID: 3169ab5c-ef4c-4002-86d3-c658115f5639"
 "20231113","tron","COINGECKO",,"1E-05","0.027861","BUY","0","staking: Bitvavo Transaction ID: a99e0db6-b93e-44bb-b841-431b5e309b02"
