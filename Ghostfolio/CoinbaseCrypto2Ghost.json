@@ -1,13 +1,13 @@
 {
     "meta":  {
                  "version":  "v2.14.0",
-                 "date":  "2023-11-29T22:20:19.000Z"
+                 "date":  "2023-12-06T20:54:30.000Z"
              },
     "activities":  [
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.00234805 BTC for €19.85 EUR",
-                           "fee":  1.49,
+                           "fee":  0,
                            "quantity":  0.00234805,
                            "type":  "BUY",
                            "unitPrice":  7819.25,
@@ -19,7 +19,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.00090667 BTC for €10.00 EUR",
-                           "fee":  0.99,
+                           "fee":  0,
                            "quantity":  0.00090667,
                            "type":  "BUY",
                            "unitPrice":  9937.46,
@@ -31,7 +31,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.0052851 BTC for €49.85 EUR",
-                           "fee":  1.99,
+                           "fee":  0,
                            "quantity":  0.0052851,
                            "type":  "BUY",
                            "unitPrice":  9055.65,
@@ -43,7 +43,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.00271895 BTC for €25.00 EUR",
-                           "fee":  1.49,
+                           "fee":  0,
                            "quantity":  0.00271895,
                            "type":  "BUY",
                            "unitPrice":  8646.72,
@@ -55,7 +55,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.00201729 BTC for €20.00 EUR",
-                           "fee":  1.49,
+                           "fee":  0,
                            "quantity":  0.00201729,
                            "type":  "BUY",
                            "unitPrice":  9175.68,
@@ -67,7 +67,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.0066075 BTC for €50.00 EUR",
-                           "fee":  1.99,
+                           "fee":  0,
                            "quantity":  0.0066075,
                            "type":  "BUY",
                            "unitPrice":  7265.99,
@@ -79,7 +79,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.00966695 BTC for €50.00 EUR",
-                           "fee":  1.99,
+                           "fee":  0,
                            "quantity":  0.00966695,
                            "type":  "BUY",
                            "unitPrice":  4966.41,
@@ -91,7 +91,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.00185472 BTC for €10.00 EUR",
-                           "fee":  0.99,
+                           "fee":  0,
                            "quantity":  0.00185472,
                            "type":  "BUY",
                            "unitPrice":  4857.88,
@@ -103,7 +103,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 0.00117894 BTC to bc1q6sn8sjrd5hwtm5dnu5avux2ptf0qe757eyq8j8",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  0.00117894,
                            "type":  "SELL",
                            "unitPrice":  8551.12,
@@ -115,7 +115,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.01145043 BTC for €100.00 EUR",
-                           "fee":  2.99,
+                           "fee":  0,
                            "quantity":  0.01145043,
                            "type":  "BUY",
                            "unitPrice":  8472.17,
@@ -127,7 +127,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 0.01187515 BTC to 1EzuE8zjfkBpF9oiQ7aQbU5VkH4Tpim2QL",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  0.01187515,
                            "type":  "SELL",
                            "unitPrice":  8402.8,
@@ -139,7 +139,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.00597854 BTC for €50.00 EUR",
-                           "fee":  1.99,
+                           "fee":  0,
                            "quantity":  0.00597854,
                            "type":  "BUY",
                            "unitPrice":  8030.39,
@@ -151,7 +151,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 0.02381387 BTC to 1EzuE8zjfkBpF9oiQ7aQbU5VkH4Tpim2QL",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  0.02381387,
                            "type":  "SELL",
                            "unitPrice":  8334.21,
@@ -163,7 +163,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.00958601 BTC for €81.85 EUR",
-                           "fee":  2.99,
+                           "fee":  0,
                            "quantity":  0.00958601,
                            "type":  "BUY",
                            "unitPrice":  8226.57,
@@ -175,7 +175,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.0058991 BTC for €50.00 EUR",
-                           "fee":  1.99,
+                           "fee":  0,
                            "quantity":  0.0058991,
                            "type":  "BUY",
                            "unitPrice":  8138.53,
@@ -187,7 +187,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 0.00013596 BTC to 31p1PbJ19o44wDTVoFPfAEeL3Jt8roQosY",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  0.00013596,
                            "type":  "SELL",
                            "unitPrice":  33232.87,
@@ -199,7 +199,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 0.02731538 BTC to 31p1PbJ19o44wDTVoFPfAEeL3Jt8roQosY",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  0.02731538,
                            "type":  "SELL",
                            "unitPrice":  33711.58,
@@ -211,7 +211,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.21791119 ETH for €499.00 EUR",
-                           "fee":  2,
+                           "fee":  0,
                            "quantity":  0.217911184,
                            "type":  "BUY",
                            "unitPrice":  2280.75,
@@ -223,7 +223,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 0.21791119 ETH to 0xD5a742300f74E104F59f2E675756f06b104C7183",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  0.217911184,
                            "type":  "SELL",
                            "unitPrice":  2255.05,
@@ -235,7 +235,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.18657191 ETH for €399.85 EUR",
-                           "fee":  1.6,
+                           "fee":  0,
                            "quantity":  0.186571911,
                            "type":  "BUY",
                            "unitPrice":  2134.57,
@@ -247,7 +247,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 0.18476368 ETH to 0xB111D3EBe69A29c966096da2e1FC97E8dd093643",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  0.184763685,
                            "type":  "SELL",
                            "unitPrice":  2076.24,
@@ -259,7 +259,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.22760443 ETH for €500.00 EUR",
-                           "fee":  2,
+                           "fee":  0,
                            "quantity":  0.227604434,
                            "type":  "BUY",
                            "unitPrice":  2188.01,
@@ -271,7 +271,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 0.22941266 ETH to 0xe9432860B3D430301493E07d9b54195bC2D85056",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  0.22941266,
                            "type":  "SELL",
                            "unitPrice":  2144.45,
@@ -331,7 +331,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 29.37226748 BAT to 0x9c5f098b839f542bc80f3F456eC62BbcdDC053E0",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  29.3722668,
                            "type":  "SELL",
                            "unitPrice":  0.17,
@@ -343,7 +343,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 24.770779 XRP for €9.85 EUR",
-                           "fee":  0.99,
+                           "fee":  0,
                            "quantity":  24.7707787,
                            "type":  "BUY",
                            "unitPrice":  0.3577,
@@ -355,7 +355,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 69.089357 XRP for €30.00 EUR",
-                           "fee":  1.99,
+                           "fee":  0,
                            "quantity":  69.0893555,
                            "type":  "BUY",
                            "unitPrice":  0.4054,
@@ -367,7 +367,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 76.441708 XRP for €30.00 EUR",
-                           "fee":  1.99,
+                           "fee":  0,
                            "quantity":  76.44171,
                            "type":  "BUY",
                            "unitPrice":  0.3664,
@@ -379,7 +379,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 104.871737 XRP for €19.85 EUR",
-                           "fee":  1.49,
+                           "fee":  0,
                            "quantity":  104.871735,
                            "type":  "BUY",
                            "unitPrice":  0.1751,
@@ -391,7 +391,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 144.782581 XRP for €30.00 EUR",
-                           "fee":  1.99,
+                           "fee":  0,
                            "quantity":  144.782578,
                            "type":  "BUY",
                            "unitPrice":  0.1935,
@@ -403,7 +403,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 64.082731 XRP for €10.00 EUR",
-                           "fee":  0.99,
+                           "fee":  0,
                            "quantity":  64.08273,
                            "type":  "BUY",
                            "unitPrice":  0.1406,
@@ -415,7 +415,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 152.399083 XRP for €29.85 EUR",
-                           "fee":  1.99,
+                           "fee":  0,
                            "quantity":  152.399078,
                            "type":  "BUY",
                            "unitPrice":  0.1828,
@@ -427,7 +427,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 43.925377 XRP for €20.00 EUR",
-                           "fee":  1.49,
+                           "fee":  0,
                            "quantity":  43.9253769,
                            "type":  "BUY",
                            "unitPrice":  0.4214,
@@ -439,7 +439,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 680.363353 XRP to rp123ueGwZTCu5ADoFMGHxE7sBUSKiwnBc (1624223890)",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  680.363342,
                            "type":  "SELL",
                            "unitPrice":  0.27,
@@ -511,7 +511,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 98.485398 XLM for €9.85 EUR",
-                           "fee":  0.99,
+                           "fee":  0,
                            "quantity":  98.4854,
                            "type":  "BUY",
                            "unitPrice":  0.09,
@@ -523,7 +523,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 56.7058404 XLM for €5.00 EUR",
-                           "fee":  0.99,
+                           "fee":  0,
                            "quantity":  56.70584,
                            "type":  "BUY",
                            "unitPrice":  0.0707,
@@ -535,7 +535,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 375.044007 XLM to GAHK7EEG2WWHVKDNT4CEQFZGKF2LGDSW2IVM4S5DP42RBW3K6BTODB4A (106904157)",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  375.044,
                            "type":  "SELL",
                            "unitPrice":  0.31,
@@ -559,7 +559,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.41993782 SOL for €59.85 EUR",
-                           "fee":  2.99,
+                           "fee":  0,
                            "quantity":  0.419937819,
                            "type":  "BUY",
                            "unitPrice":  135.4,
@@ -571,7 +571,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 0.41993782 SOL to 7VDubiREEqr7wuVM7Am9JRku5mSztvkd77BFWux78krd",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  0.419937819,
                            "type":  "SELL",
                            "unitPrice":  128.27,
@@ -583,7 +583,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.72508602 SOL for €99.85 EUR",
-                           "fee":  2.99,
+                           "fee":  0,
                            "quantity":  0.725086033,
                            "type":  "BUY",
                            "unitPrice":  133.58,
@@ -595,7 +595,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 0.72506933 SOL to 7xLLsorj9QFZg71wGXUq4uuB7heQhHfeAkq6JmPzLgpa",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  0.725069344,
                            "type":  "SELL",
                            "unitPrice":  131.96,
@@ -607,7 +607,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.29536047 SOL for €10.25 EUR",
-                           "fee":  0.99,
+                           "fee":  0,
                            "quantity":  0.295360476,
                            "type":  "BUY",
                            "unitPrice":  31.35,
@@ -619,7 +619,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 0.29537716 SOL to FP7mq1L3FCgCP9TXPK2eXLicSsNYTsgPVYM6mfUhLKVg",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  0.295377165,
                            "type":  "SELL",
                            "unitPrice":  31.32,
@@ -631,7 +631,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Received 0.29536716 SOL from an external account",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  0.295367151,
                            "type":  "BUY",
                            "unitPrice":  31,
@@ -3126,8 +3126,116 @@
                        },
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
+                           "comment":  "Coinbase: Received 0.00008684 SOL from Coinbase Rewards",
+                           "fee":  0,
+                           "quantity":  8.6844E-05,
+                           "type":  "BUY",
+                           "unitPrice":  52.81,
+                           "currency":  null,
+                           "dataSource":  "COINGECKO",
+                           "date":  "2023-11-17T19:20:06Z",
+                           "symbol":  "solana"
+                       },
+                       {
+                           "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
+                           "comment":  "Coinbase: Received 0.00008832 SOL from Coinbase Rewards",
+                           "fee":  0,
+                           "quantity":  8.8322E-05,
+                           "type":  "BUY",
+                           "unitPrice":  49.21,
+                           "currency":  null,
+                           "dataSource":  "COINGECKO",
+                           "date":  "2023-11-21T22:06:06Z",
+                           "symbol":  "solana"
+                       },
+                       {
+                           "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
+                           "comment":  "Coinbase: Received 0.00008881 SOL from Coinbase Rewards",
+                           "fee":  0,
+                           "quantity":  8.8805E-05,
+                           "type":  "BUY",
+                           "unitPrice":  53.22,
+                           "currency":  null,
+                           "dataSource":  "COINGECKO",
+                           "date":  "2023-11-23T01:23:08Z",
+                           "symbol":  "solana"
+                       },
+                       {
+                           "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
+                           "comment":  "Coinbase: Received 0.00008845 SOL from Coinbase Rewards",
+                           "fee":  0,
+                           "quantity":  8.8454E-05,
+                           "type":  "BUY",
+                           "unitPrice":  52.4,
+                           "currency":  null,
+                           "dataSource":  "COINGECKO",
+                           "date":  "2023-11-24T02:23:29Z",
+                           "symbol":  "solana"
+                       },
+                       {
+                           "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
+                           "comment":  "Coinbase: Received 0.00008846 SOL from Coinbase Rewards",
+                           "fee":  0,
+                           "quantity":  8.8462E-05,
+                           "type":  "BUY",
+                           "unitPrice":  54.39,
+                           "currency":  null,
+                           "dataSource":  "COINGECKO",
+                           "date":  "2023-11-30T08:40:17Z",
+                           "symbol":  "solana"
+                       },
+                       {
+                           "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
+                           "comment":  "Coinbase: Received 0.00008757 SOL from Coinbase Rewards",
+                           "fee":  0,
+                           "quantity":  8.7569E-05,
+                           "type":  "BUY",
+                           "unitPrice":  54.49,
+                           "currency":  null,
+                           "dataSource":  "COINGECKO",
+                           "date":  "2023-11-30T16:10:49Z",
+                           "symbol":  "solana"
+                       },
+                       {
+                           "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
+                           "comment":  "Coinbase: Received 0.00008811 SOL from Coinbase Rewards",
+                           "fee":  0,
+                           "quantity":  8.8107E-05,
+                           "type":  "BUY",
+                           "unitPrice":  54.98,
+                           "currency":  null,
+                           "dataSource":  "COINGECKO",
+                           "date":  "2023-11-30T21:20:41Z",
+                           "symbol":  "solana"
+                       },
+                       {
+                           "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
+                           "comment":  "Coinbase: Received 0.00008751 SOL from Coinbase Rewards",
+                           "fee":  0,
+                           "quantity":  8.7512E-05,
+                           "type":  "BUY",
+                           "unitPrice":  57.71,
+                           "currency":  null,
+                           "dataSource":  "COINGECKO",
+                           "date":  "2023-12-02T19:51:41Z",
+                           "symbol":  "solana"
+                       },
+                       {
+                           "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
+                           "comment":  "Coinbase: Received 0.00008893 SOL from Coinbase Rewards",
+                           "fee":  0,
+                           "quantity":  8.8925E-05,
+                           "type":  "BUY",
+                           "unitPrice":  55.63,
+                           "currency":  null,
+                           "dataSource":  "COINGECKO",
+                           "date":  "2023-12-05T04:37:45Z",
+                           "symbol":  "solana"
+                       },
+                       {
+                           "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 782.15356608 DOGE for €119.85 EUR",
-                           "fee":  2.99,
+                           "fee":  0,
                            "quantity":  782.153564,
                            "type":  "BUY",
                            "unitPrice":  0.1494,
@@ -3139,7 +3247,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 782.12708121 DOGE to DQVAYthGZo73MEJFXhz6ntFiyQBedY2yWk",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  782.1271,
                            "type":  "SELL",
                            "unitPrice":  0.14,
@@ -3223,7 +3331,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 1.16102841 AVAX for €100.00 EUR",
-                           "fee":  2.99,
+                           "fee":  0,
                            "quantity":  1.16102839,
                            "type":  "BUY",
                            "unitPrice":  83.56,
@@ -3235,7 +3343,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 1.19074678 AVAX to 0xe9432860B3D430301493E07d9b54195bC2D85056",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  1.19074678,
                            "type":  "SELL",
                            "unitPrice":  83.31,
@@ -3247,7 +3355,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 3.03009125 AVAX for €270.00 EUR",
-                           "fee":  3.96,
+                           "fee":  0,
                            "quantity":  3.03009129,
                            "type":  "BUY",
                            "unitPrice":  87.8,
@@ -3259,7 +3367,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 2.98763095 AVAX to 0xe9432860B3D430301493E07d9b54195bC2D85056",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  2.98763084,
                            "type":  "SELL",
                            "unitPrice":  87.24,
@@ -3271,7 +3379,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 1.16473754 AVAX for €99.00 EUR",
-                           "fee":  2.99,
+                           "fee":  0,
                            "quantity":  1.16473758,
                            "type":  "BUY",
                            "unitPrice":  82.43,
@@ -3283,7 +3391,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 1.20719784 AVAX to 0xe9432860B3D430301493E07d9b54195bC2D85056",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  1.20719779,
                            "type":  "SELL",
                            "unitPrice":  82.04,
@@ -3295,7 +3403,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.5246229 AVAX for €40.00 EUR",
-                           "fee":  1.99,
+                           "fee":  0,
                            "quantity":  0.5246229,
                            "type":  "BUY",
                            "unitPrice":  72.45,
@@ -3307,7 +3415,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 0.49850328 AVAX to 0xe9432860B3D430301493E07d9b54195bC2D85056",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  0.498503268,
                            "type":  "SELL",
                            "unitPrice":  72.02,
@@ -3319,7 +3427,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.26592951 AVAX for €20.00 EUR",
-                           "fee":  1.49,
+                           "fee":  0,
                            "quantity":  0.26592952,
                            "type":  "BUY",
                            "unitPrice":  69.6,
@@ -3331,7 +3439,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 0.28652871 AVAX to 0xe9432860B3D430301493E07d9b54195bC2D85056",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  0.2865287,
                            "type":  "SELL",
                            "unitPrice":  69.25,
@@ -3343,7 +3451,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 2.68251117 AVAX for €50.00 EUR",
-                           "fee":  1.99,
+                           "fee":  0,
                            "quantity":  2.682511,
                            "type":  "BUY",
                            "unitPrice":  17.9,
@@ -3355,7 +3463,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 2.68803159 AVAX to 0xe9432860B3D430301493E07d9b54195bC2D85056",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  2.68803167,
                            "type":  "SELL",
                            "unitPrice":  17.78,
@@ -3367,7 +3475,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.86107669 AVAX for €19.85 EUR",
-                           "fee":  1.49,
+                           "fee":  0,
                            "quantity":  0.8610767,
                            "type":  "BUY",
                            "unitPrice":  21.32,
@@ -3379,7 +3487,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 0.86107669 AVAX to 0xe9432860B3D430301493E07d9b54195bC2D85056",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  0.8610767,
                            "type":  "SELL",
                            "unitPrice":  21.1,
@@ -3391,7 +3499,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 1.48592566 AVAX for €30.00 EUR",
-                           "fee":  1.99,
+                           "fee":  0,
                            "quantity":  1.48592567,
                            "type":  "BUY",
                            "unitPrice":  18.85,
@@ -3403,7 +3511,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 1.48106922 AVAX to 0xe9432860B3D430301493E07d9b54195bC2D85056",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  1.48106921,
                            "type":  "SELL",
                            "unitPrice":  18.75,
@@ -3415,7 +3523,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 0.70816652 AVAX for €15.00 EUR",
-                           "fee":  1.49,
+                           "fee":  0,
                            "quantity":  0.70816654,
                            "type":  "BUY",
                            "unitPrice":  19.08,
@@ -3427,7 +3535,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 0.71302296 AVAX to 0xe9432860B3D430301493E07d9b54195bC2D85056",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  0.713022947,
                            "type":  "SELL",
                            "unitPrice":  18.96,
@@ -3451,7 +3559,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 1.95185503 AVAX to 0xe9432860B3D430301493E07d9b54195bC2D85056",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  1.95185506,
                            "type":  "SELL",
                            "unitPrice":  11.93,
@@ -3463,7 +3571,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Bought 66.43010064 CRO for €30.40 EUR",
-                           "fee":  1.99,
+                           "fee":  0,
                            "quantity":  66.4301,
                            "type":  "BUY",
                            "unitPrice":  0.4277,
@@ -3475,7 +3583,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Sent 66.43010064 CRO to 0xe9432860B3D430301493E07d9b54195bC2D85056",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  66.4301,
                            "type":  "SELL",
                            "unitPrice":  0.38,
@@ -3487,7 +3595,7 @@
                        {
                            "accountId":  "e50298c4-43b5-41db-8f9c-fcbcbc4709fc",
                            "comment":  "Coinbase: Received 96.1600 FLR from Flare Airdrop",
-                           "fee":  1E-05,
+                           "fee":  0,
                            "quantity":  96.16,
                            "type":  "BUY",
                            "unitPrice":  0.03,

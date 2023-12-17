@@ -156,7 +156,7 @@ try {
                         @{
                             accountId = $accountId
                             comment = $comment
-                            fee = $fee
+                            fee = 0 #$fee
                             quantity = $toQuantity
                             type = "BUY"
                             unitPrice = $unitPrice
@@ -209,7 +209,7 @@ try {
                     [PSCustomObject]@{
                         accountId = $accountId
                         comment = $comment
-                        fee = $fee
+                        fee = 0 #$fee
                         quantity = $quantity
                         type = $type
                         unitPrice = $unitPrice
