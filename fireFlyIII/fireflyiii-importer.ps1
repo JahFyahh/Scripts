@@ -2,7 +2,8 @@ Remove-Variable * -ErrorAction SilentlyContinue
 
 #Home
 $workingDir      = "$PSScriptRoot"
-$csvFile         = "$($workingDir)\Ings_Alle_rekeningen.csv"
+#$csvFile         = "$($workingDir)\import_Ings_Alle_rekeningen.csv"
+$csvFile         = "$($workingDir)\import_X59233900_saving.csv"
 $skippedCsv      = "$($workingDir)\fireFlySkippedLines.csv"
 
 $apiToken     = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxOCIsImp0aSI6IjMzNThkMjM4MGEyYjJiMjVlNDQ5MGRlZGM1ZTYwZjA0NGU3MWU4OTNhMTYyOGYwNGYxYTg4ZTY4MDU2MzMwNjhhMTdmNjE5YTBjMjYyZTE5IiwiaWF0IjoxNzAyODQ4ODAzLjQ5MzgyLCJuYmYiOjE3MDI4NDg4MDMuNDkzODM0LCJleHAiOjE3MzQ0NzEyMDMuMzk3NTc2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ilPD09gFmszChrJ2c9bfCm9GDYju5FaxquWsBhAYqT131yZ5lUnHKfkXOm2r2ID4_XCxeQX6brzLS7T3zLRSarsqXj1HoKK255MOUd2R9AV3P4JEh6WAnl1PIMu6fBRa84qQ2LAuvYSR4Azlthqw1SZ6mrXw32zgSn1-Sowfcr9Htvblyexvv113rgOiMnuDBC-0emr1wKmIDNsPXLLWBenqHCAnEFSmnz1D6RFCG1ENz4TVbAX3dMpy_klh0J5OUkfEsjX_T2Zxiruigl0dmM_cco3YWh8Eof4vTgujHBRiGtdJMIONO21kYLz4rmrpzohDm6woyWS1oE4Yj8I76xFpdrqJVKi33RzwroY3v3qpeA8geokvN7HwjvZREF-gKG6vOBbPyWJy1BXExKJcB3w27y7Zqt321zeyingFYfzOpF-R1BdQ821ezJob3DBSYM1RwRSYNcIfKGj7wKdsizlLCUqti1bECAz-HDJjEeuZsqSeeSAqWY64RC6K0Tl7Z2rJAgRTec3K_Q7aeZ5uRDUPffk-8SurYWGx_b3_ZWPC2qGuSXIb5_d54jRiTMduaDKfGpN9cDHhBSJa5rfL1FDlRYmyU6FvmVRlT2F2yNLYc9-jSN2mn7Cb-_xh-IwlOCfNs6pEtLmxHw5JyjSUrVoQC1Jd92UY9g7JFaSsvaQ"
@@ -35,6 +36,9 @@ function get-accountId(){
         }
         "NL42INGB0628505914" { 
             return @(680, "Hr IRD Luciano,Mw N Boom")
+        }
+        "X 592-33900" { 
+            return @(678, "Hr IRD Luciano savings account")
         }
         Default {
             # Handle other account IDs or provide a default value if needed
@@ -101,11 +105,11 @@ try {
                 } | ConvertTo-Json
 
                 # Make the API call
-                $response = Invoke-RestMethod -Uri ($url + "transactions") -Method Post -Headers $headers -Body $jsonPayload
+                #$response = Invoke-RestMethod -Uri ($url + "transactions") -Method Post -Headers $headers -Body $jsonPayload
 
                 # Display the response
                 # $response
-                Write-Host "http://192.168.1.11:3334/transactions/show/$($response.data.id)"
+                #Write-Host "http://192.168.1.11:3334/transactions/show/$($response.data.id)"
             }
 
         }
