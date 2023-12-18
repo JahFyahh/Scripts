@@ -16,10 +16,11 @@ Ghostfolio/deGiroAccount.csv
 Ghostfolio/deGiroSkippedLines.csv
 Ghostfolio/ghostfolio-crypto-export-202311040023.json.bak
 Ghostfolio/bitvavoCrypto2Ghost.csv
-fireFlyIII/X59233900_01-01-2023_16-12-2023.csv
-fireFlyIII/Ings_Alle_rekeningen_01-01-2023_16-12-2023.csv
-fireFlyIII/Ings_Alle_rekeningen.csv
+fireFlyIII/X59233900*
+fireFlyIII/Ings_Alle_rekeningen*
 fireFlyIII/importer_ing_custom.json
 fireFlyIII/importer_ing_custom_savings.json
 fireFlyIII/fireFlySkippedLines.csv
 fireFlyIII/import_Ings_Alle_rekeningen.csv
+fireFlyIII/fireFlySkippedLines*
+fireFlyIII/.~lock.*
