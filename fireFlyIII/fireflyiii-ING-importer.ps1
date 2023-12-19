@@ -57,7 +57,8 @@ function Rename-FileWith {
 
     # Check if the file exists
     if (-not (Test-Path -Path $FilePath -PathType Leaf)) {
-        throw "File not found: $FilePath"
+        Write-Host "Creating $FilePath" -ForegroundColor Yellow
+        $null = New-Item $FilePath
     }
 
     # Get the file's base name and extension
@@ -140,13 +141,16 @@ function New-Transaction {
 #endregion functions
 
 #region rekeningen
-if((Test-Path -Path $rekeningenFile -PathType Leaf) -or ($runRekening)){
+if((Test-Path -Path $rekeningenFile -PathType Leaf) -and ($runRekening)){
     try {
         # Intro
-        Write-Host -ForegroundColor Yellow "Importing $(Split-Path -Path $rekeningenFile -Leaf)"
+        Write-Host -ForegroundColor Yellow "Importing rekeningen file: $(Split-Path -Path $rekeningenFile -Leaf)"
         
         # import file
         $rekeningImport = Import-Csv $rekeningenFile -Delimiter ";" -Encoding UTF8 
+
+        # Created skipped file
+        $newSkippedCsv = Rename-FileWith -FilePath $skippedCsv -Append "rekeningen_$(Get-Date -Format "yyyyMMddTHHmm")"
 
         # Initialize the progress bar
         Write-Progress -Activity "Processing rekeningen Items" -Status "0% Complete" -PercentComplete 0
@@ -177,6 +181,8 @@ if((Test-Path -Path $rekeningenFile -PathType Leaf) -or ($runRekening)){
                     $destination_name = (get-accountId -account $line.Counterparty -name $line.'Name / Description')[1]
                 }
 
+                if( $source_id -and $destination_id ) { $type = "transfer" }
+
                 $transactionParams = @{
                     "type"               = $type
                     "date"               = $date
@@ -200,8 +206,6 @@ if((Test-Path -Path $rekeningenFile -PathType Leaf) -or ($runRekening)){
                 # Added skipped/failed line to file
                 $line | Add-Member -MemberType NoteProperty -Name "idx" -Value $idx -Force
                 $line | Add-Member -MemberType NoteProperty -Name "psError" -Value $exceptDetails.Exception.Message -Force
-
-                $newSkippedCsv = Rename-FileWith -FilePath $skippedCsv -Append "rekeningen_$(Get-Date -Format "yyyyMMddTHHmm")"
                 $line | Export-Csv -Path $newSkippedCsv -Append -NoTypeInformation -Delimiter ";"
 
                 $skippedRek++
@@ -218,14 +222,14 @@ if((Test-Path -Path $rekeningenFile -PathType Leaf) -or ($runRekening)){
     }
     catch {
         $exceptDetails = $_
-        Write-Host -ForegroundColor Red "Rekeningen Main catch Error details: $_"
+        Write-Host -ForegroundColor Red "Rekeningen Main catch Error details: $($Error[0])"
     }
     finally {
         # Complete the progress bar
         Write-Progress -Activity "Processing rekeningen Items" -Status "100% Complete" -PercentComplete 100 -Completed
         Write-Host "Done processing rekeningen" -ForegroundColor Green
         Write-Host "Skipped $($skippedRek) lines" -ForegroundColor Yellow
-        Rename-FileWith -FilePath $savingsFile -Append "done"
+        Rename-FileWith -FilePath $rekeningenFile -Append "done"
     }
 }
 else{
@@ -234,13 +238,16 @@ else{
 #endregion rekeningen
 
 #region Savings Accounts
-if((Test-Path -Path $savingsFile -PathType Leaf) -or ($runSavings)){
+if((Test-Path -Path $savingsFile -PathType Leaf) -and ($runSavings)){
     try {
         # Intro
-        Write-Host -ForegroundColor Yellow "Importing $(Split-Path -Path $savingsFile -Leaf)"
+        Write-Host -ForegroundColor Yellow "Importing savings file: $(Split-Path -Path $savingsFile -Leaf)"
         
         # import file
         $savingsImport = Import-Csv $savingsFile -Delimiter ";" -Encoding UTF8 
+
+        # Create skipped file
+        $newSkippedCsv = Rename-FileWith -FilePath $skippedCsv -Append "savings_$(Get-Date -Format "yyyyMMddTHHmm")"
 
         # Initialize the progress bar
         Write-Progress -Activity "Processing Savings Items" -Status "0% Complete" -PercentComplete 0
@@ -295,8 +302,6 @@ if((Test-Path -Path $savingsFile -PathType Leaf) -or ($runSavings)){
                 # Added skipped/failed line to file
                 $line | Add-Member -MemberType NoteProperty -Name "idy" -Value $idy -Force
                 $line | Add-Member -MemberType NoteProperty -Name "psError" -Value $exceptDetails.Exception.Message -Force
-                
-                $newSkippedCsv = Rename-FileWith -FilePath $skippedCsv -Append "savings_$(Get-Date -Format "yyyyMMddTHHmm")"
                 $line | Export-Csv -Path $newSkippedCsv -Append -NoTypeInformation -Delimiter ";"
 
                 $skippedSav++
