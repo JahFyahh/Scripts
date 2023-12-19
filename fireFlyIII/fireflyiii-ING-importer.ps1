@@ -228,6 +228,9 @@ if((Test-Path -Path $rekeningenFile -PathType Leaf) -or ($runRekening)){
         Rename-FileWith -FilePath $savingsFile -Append "done"
     }
 }
+else{
+    Write-Host "Either the given rekeningen file does not exist or this run is disabled" -ForegroundColor Yellow
+}
 #endregion rekeningen
 
 #region Savings Accounts
