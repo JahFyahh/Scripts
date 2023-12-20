@@ -20,7 +20,7 @@ $headers        = @{
 #endregion Variables
 
 #region functions
-function get-accountId(){
+function get-accountId {
     param(
         [string]$account,
         [string]$name
@@ -138,6 +138,60 @@ function New-Transaction {
         <#Do this after the try block regardless of whether an exception occurred or not#>
     }
 }
+
+function New-Account {
+    Param(
+        [string]$Name,
+        [string]$IBAN,
+        [string]$accNumber,
+        [string]$Notes,
+        [string]$Type,
+        [string]$openBalance,
+        [string]$openDate,
+        [string]$role = "defaultAsset",
+        [boolean]$InclNetWorth
+    )
+
+    try{            
+        # Specify the JSON payload
+        $jsonPayload = @{
+            "name"                    = $Name.ToLower()
+            "type"                    = $Type
+            "iban"                    = $IBAN
+            "account_number"          = $accNumber
+            "opening_balance"         = $openBalance
+            "opening_balance_date"    = $openDate
+            "active"                  = $true
+            "include_net_worth"       = $InclNetWorth
+            "account_role"            = $role
+            "notes"                   = "Some example notes"
+        } | ConvertTo-Json
+
+        # Make the API call
+        $response = Invoke-RestMethod -Uri ($url + "transactions") -Method Post -Headers $headers -Body $jsonPayload
+        # Display the response
+        # $response
+        Write-Host "http://192.168.1.11:3334/transactions/show/$($response.data.id)" -ForegroundColor Yellow 
+    }
+    catch {
+        # Handle the error
+        if ($null -ne $_.Exception.Response) {
+            $errorDetails = $_.Exception.Response.GetResponseStream()
+            $reader = New-Object System.IO.StreamReader($errorDetails)
+            $responseContent = $reader.ReadToEnd()
+            #Write-Host -ForegroundColor Red "Validation Error Details: $responseContent"
+        }
+        $exceptDetails = $_
+        #Write-Host -ForegroundColor Red "Error details: $_"
+
+        throw "$($exceptDetails.Exception.Message) - $($responseContent)"
+    }
+    finally {
+        <#Do this after the try block regardless of whether an exception occurred or not#>
+    }
+}
+
+New-Account -Name "COMPLETELY NUTS KORTENHOEF NLD" -IBAN "" -accNumber "" -Notes "" -Type "expense" -openBalance "" -openDate "" -role "" -InclNetWorth $false
 #endregion functions
 
 #region rekeningen
@@ -158,7 +212,7 @@ if((Test-Path -Path $rekeningenFile -PathType Leaf) -and ($runRekening)){
         Write-Host "Found $($rekeningImport.Length) items to process" -ForegroundColor Yellow 
         for($idx = 0; $idx -lt $rekeningImport.Length; $idx++){
             try{
-                $line         = $rekeningImport[$idx]
+                $line         = $rekeningImport[1]
                 $description  = $line.Notifications
                 $name         = $line.'Name / Description'
                 $amount       = $line.'Amount (EUR)'.Replace(",",".")
